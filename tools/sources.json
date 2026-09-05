@@ -1,0 +1,116 @@
+{
+ "arch-1970s-medaglie": {
+  "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivoi6slAQCDslqUUD79ltdNSlab6KJgwmQ-RkbO0OOB92wYyPmOYrSr3yyo6eucTagM11Amgpyc14peKZeXa9VQLn30xWJ8y7m2eMwFsWR-j_oF_AbOS27XKEdJfn3OTxyCC-0S7FplN9R/s1600/13f.jpg",
+  "maxw": 900,
+  "q": 82
+ },
+ "arch-newyork-1976": {
+  "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXOEvfBDUrA0QB1THnXVbYINz8a4mY7mhooJhseEH8sQUupJbg_vc_pyFhYDD974JdG0i84ZhO5lm23-zavOYNFc1IztuBHbMiIRyCoFOJYbYTuwB9qpQMhp7LzR7YUzYdRhW-HPf6YyfB/s1600/13r.jpg",
+  "maxw": 1000,
+  "q": 80
+ },
+ "arch-gala": {
+  "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5Y_HtED5gnxlnildIAuViSiZ1mdjfTF81EwIhWew4bXB7m4eMy5VUHDTHiTqdLGW9497Lr-rggP4B-tSIX1o63MkEF5CaXq-BwbaerH3QTF0nyNkH-s4KhsI2NcETj4LamVvzTTGcm9VB/s1600/10a.jpg",
+  "maxw": 900,
+  "q": 80
+ },
+ "arch-evian-1974": {
+  "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHJfFHyzV6NbAe1JHhWoY_15QkUmBvUNdZKobo58HyHT8qQY3_d9RieJoICVnVNacJKZP_1oGG2WyZBk_ops-DvUZ7TM7jkZ2-TKXOuRx0zVqg-5EGAZ8cTIy4FmBRrqn7ILpOxNg0S8hY/s1600/9f.jpg",
+  "maxw": 900,
+  "q": 80
+ },
+ "libro-copertina": {
+  "url": "https://cerignola.gocity.it/library/media/le_mani_tra_i_capelli.jpg",
+  "maxw": 488,
+  "q": 88
+ },
+ "vincenzo-premiazione": {
+  "url": "https://cerignola.gocity.it/library/media/le_mani_tra_i_capelli.jpg",
+  "crop": [
+   0,
+   0,
+   488,
+   252
+  ],
+  "maxw": 488,
+  "q": 88
+ },
+ "salone": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/img/ilsalone.8.webp",
+  "maxw": 1000,
+  "q": 76
+ },
+ "work-waves": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/img/chisiamo.7.webp",
+  "maxw": 800,
+  "q": 78
+ },
+ "work-taglio": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/img/5.0.Taglio_Contemporaneo.1.webp",
+  "maxw": 800,
+  "q": 78
+ },
+ "work-colore": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/img/5.2.Colorazioni.2.webp",
+  "maxw": 800,
+  "q": 78
+ },
+ "work-acconciatura": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/img/5.3.Acconciature.3.webp",
+  "maxw": 800,
+  "q": 78
+ },
+ "work-skinfade": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/data/gallery/e0b5d122-a986-434c-9631-74838aef9022.jpeg",
+  "maxw": 700,
+  "q": 78
+ },
+ "work-balayage": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/data/gallery/29b23627-dbfe-458e-b7ec-01d6e8e27598.jpeg",
+  "maxw": 700,
+  "q": 78
+ },
+ "work-onde": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/data/gallery/1d581ef3-3678-4a9d-a8cb-cb468ac41a80.jpeg",
+  "maxw": 700,
+  "q": 78
+ },
+ "work-blonde": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/data/gallery/8570f4a8-a4db-41e6-9b6b-28d13fd51b7a.1.jpeg",
+  "maxw": 700,
+  "q": 78
+ },
+ "work-gal04": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/data/gallery/8ead52c9-f3e8-4cc8-9009-ac6535683742.png",
+  "trim": true,
+  "maxw": 700,
+  "q": 78
+ },
+ "work-gal09": {
+  "url": "https://web.archive.org/web/2025im_/https://www.bellicapellibyrussomilano.it/data/gallery/8031d4db-8dfa-446a-a9b2-1fcee0b8f975.jpeg",
+  "portrait": true,
+  "maxw": 700,
+  "q": 78
+ },
+ "work-rosso": {
+  "url": "https://scontent.cdninstagram.com/v/t51.82787-15/662339785_18370548817200910_1972772675214867235_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9mMmTTPuxJEQ7kNvwHl5Z7-&_nc_oc=AdrzUS6kK8iHXsz8xutYlk0DtsfYh3xZ9e-_8yakrtnRXa7IzL6ePqlXkVOawuEV2m8&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=K1epx1ZsLKwrgOD2Z3mgvg&_nc_ss=79689&oh=00_AQKJEyl_wpSwzpH7EawP-eV1o00J1G1gpR3B6NQpI3peUg&oe=6AA20E82",
+  "maxw": 640,
+  "q": 80
+ },
+ "work-volume": {
+  "url": "https://scontent.cdninstagram.com/v/t51.82787-15/622846450_18129490084516185_410020957136371840_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yRWZquHHBqcQ7kNvwFRWU5I&_nc_oc=Adr7L32qniAHJXl4Td0eOLyCr2gHdCbz0mALMaoOYXBp3XLFsFma7FhAbKIxseDPDlA&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=K1epx1ZsLKwrgOD2Z3mgvg&_nc_ss=79689&oh=00_AQJYEnqicEEnlM3KT7Q5kU1UQMUEHQkpCxNNJ-CdMnTvHA&oe=6AA22F70",
+  "maxw": 640,
+  "q": 80
+ },
+ "vincenzo-2026": {
+  "url": "https://scontent.cdninstagram.com/v/t51.71878-15/698516911_2031508537430436_190115974004788612_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ENC04xv5kcIQ7kNvwFKu4PQ&_nc_oc=Adquo9NE3q4nXVxGb0t5286THc69AsNiTi1CH5XucgWFHL_158O0bCKdS9lBs_rZm-k&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=TPzgGKrl7aD7_w96NjX2ow&_nc_ss=79689&oh=00_AQL0KgZY5dSmUKeQsCyUQoAi3NGUZF5doZblGp10M543VQ&oe=6AA22EE9",
+  "crop": [
+   92,
+   28,
+   361,
+   640
+  ],
+  "maxw": 640,
+  "q": 86
+ }
+}

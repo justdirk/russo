@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Russo 23 — Parrucchiere e Barbiere a Milano, via Meda 23</title>
+<meta name="description" content="Raffaele Russo, maestro d'arte A.N.A.M., parrucchiere uomo e donna e barbiere in via Giuseppe Meda 23 a Milano (Navigli–Tibaldi) dal 1998. Taglio a forbice e rasoio, colore, balayage. 4,8/5 su 353 recensioni. Prenota online.">
+<link rel="canonical" href="https://www.bellicapellibyrussomilano.it/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#131318">
+<meta property="og:type" content="business.business">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Russo 23 · Milano">
+<meta property="og:title" content="Russo 23 — Parrucchiere e Barbiere a Milano, via Meda 23">
+<meta property="og:description" content="Raffaele Russo, maestro d'arte A.N.A.M., in via Meda dal 1998. Figlio di Vincenzo Russo, campione del mondo di acconciatura maschile. Prenota online.">
+<meta property="og:image" content="https://www.bellicapellibyrussomilano.it/img/arch-1970s-medaglie.jpg">
+<meta property="og:url" content="https://www.bellicapellibyrussomilano.it/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400;1,6..96,700&family=Archivo:wght@400;500;600;700&display=swap">
+
+<style>
+/* ============ TOKENS — dark-first: the shop after hours, mirror-lit ============ */
+:root{
+  --ink:#131318; --ink-raised:#1B1B22; --ink-sunk:#0D0D11;
+  --text:#E8E5DD; --text-dim:#9A9AA4; --rule:#2C2C36; --rule-soft:#22222A;
+  --brass:#B58E46; --brass-dim:#6E5729; --sangue:#8E2430;
+  --btn-ink:#131318; --shadow:rgba(0,0,0,.55); --glow:rgba(181,142,70,.10);
+  --f-display:"Bodoni Moda","Didot","Bodoni MT",Georgia,serif;
+  --f-body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --maxw:1200px; --rail:148px;
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]){
+    --ink:#EDEAE2; --ink-raised:#F5F3EC; --ink-sunk:#E2DED4;
+    --text:#16161B; --text-dim:#5E5E68; --rule:#CBC6BA; --rule-soft:#DCD8CD;
+    --brass:#8A6A26; --brass-dim:#B9A377; --sangue:#7A1E28;
+    --btn-ink:#F5F3EC; --shadow:rgba(30,26,18,.13); --glow:rgba(138,106,38,.07);
+  }
+}
+:root[data-theme="light"]{
+  --ink:#EDEAE2; --ink-raised:#F5F3EC; --ink-sunk:#E2DED4;
+  --text:#16161B; --text-dim:#5E5E68; --rule:#CBC6BA; --rule-soft:#DCD8CD;
+  --brass:#8A6A26; --brass-dim:#B9A377; --sangue:#7A1E28;
+  --btn-ink:#F5F3EC; --shadow:rgba(30,26,18,.13); --glow:rgba(138,106,38,.07);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
+body{margin:0;background:var(--ink);color:var(--text);font-family:var(--f-body);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;padding-bottom:0}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.grid{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:0 40px}
+@media(max-width:820px){ .grid{grid-template-columns:1fr;gap:14px} }
+.label{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);font-variant-numeric:tabular-nums}
+.dim{color:var(--text-dim)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+/* ============ NAV ============ */
+header.nav{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--ink) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule-soft)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:13px 28px;display:flex;align-items:center;gap:22px}
+.mark{font-family:var(--f-display);font-weight:900;font-size:17px;letter-spacing:.09em;line-height:1.15;white-space:nowrap;text-decoration:none}
+.mark .mk2{font-weight:400;color:var(--brass)}
+h1.word .num{font-weight:400;color:var(--brass)}
+.mark small{display:block;font-family:var(--f-body);font-weight:600;font-size:8.5px;letter-spacing:.22em;color:var(--brass);margin-top:1px}
+nav.links{display:flex;gap:24px;margin-left:auto;font-size:13.5px}
+nav.links a{text-decoration:none;color:var(--text-dim);transition:color .18s}
+nav.links a:hover{color:var(--text)}
+@media(max-width:900px){ nav.links{display:none} .lang{margin-left:auto} }
+.lang{display:flex;border:1px solid var(--rule);border-radius:2px;overflow:hidden}
+.lang button{font:inherit;font-size:11px;font-weight:600;letter-spacing:.1em;padding:6px 9px;background:transparent;color:var(--text-dim);border:0;cursor:pointer;transition:.16s}
+.lang button[aria-pressed="true"]{background:var(--brass);color:var(--btn-ink)}
+.btn{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;padding:12px 20px;background:var(--brass);color:var(--btn-ink);border:1px solid var(--brass);border-radius:2px;transition:.18s;white-space:nowrap;text-align:center}
+.btn:hover{background:transparent;color:var(--brass)}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--rule)}
+.btn.ghost:hover{border-color:var(--brass);color:var(--brass)}
+@media(max-width:560px){ .nav-in .btn{display:none} }
+
+/* ============ HERO — the name, then the archive, full width ============ */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--rule-soft)}
+.hero::before{content:"";position:absolute;inset:-30% -10% auto -10%;height:120%;background:radial-gradient(58% 52% at 28% 22%,var(--glow),transparent 72%);pointer-events:none}
+.hero-in{max-width:var(--maxw);margin:0 auto;padding:0 28px;position:relative}
+.hero-copy{padding:66px 0 46px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:end}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--text-dim);margin-bottom:24px}
+.eyebrow b{color:var(--brass);font-weight:600}
+h1.word{font-family:var(--f-display);font-weight:900;font-size:clamp(54px,9.4vw,138px);line-height:.86;letter-spacing:-.018em;margin:0 0 0 -.05em}
+h1.word .sm{display:block;font-size:.48em;font-weight:400;font-style:italic;letter-spacing:.012em;color:var(--brass);margin:12px 0 0 .06em}
+.since{font-family:var(--f-display);font-style:italic;font-weight:400;font-size:clamp(20px,2.3vw,27px);color:var(--brass);line-height:1.25;margin:0 0 18px}
+.deck{max-width:46ch;font-size:17.5px;line-height:1.6}
+.deck em{font-family:var(--f-display);font-style:italic;font-weight:700}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.proof{display:flex;align-items:center;gap:14px;margin-top:22px;font-size:13.5px;color:var(--text-dim)}
+.proof b{font-family:var(--f-display);font-size:22px;color:var(--text);font-weight:700;font-variant-numeric:tabular-nums}
+.proof .st{color:var(--brass);letter-spacing:.08em}
+.hero-band{margin:0 0 0;position:relative;aspect-ratio:2.2/1;overflow:hidden;border:1px solid var(--rule);border-bottom:0}
+.hero-band img{width:100%;height:100%;object-fit:cover;object-position:50% 32%}
+.hero-band::after{content:"";position:absolute;inset:auto 0 0 0;height:46%;background:linear-gradient(to top,rgba(19,19,24,.78),transparent);pointer-events:none}
+.hero-band figcaption{position:absolute;left:22px;right:22px;bottom:20px;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:baseline;color:#E8E5DD;font-size:13px;line-height:1.45;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+.hero-band figcaption b{font-family:var(--f-display);font-size:24px;font-weight:700;color:var(--brass)}
+@media(max-width:900px){
+  .hero-copy{grid-template-columns:1fr;gap:22px;padding:40px 0 34px}
+  .hero-band{aspect-ratio:16/10;margin:0 -28px;border-left:0;border-right:0}
+  .hero-band figcaption{left:18px;right:18px;bottom:14px;font-size:12px}
+  .hero-band figcaption b{font-size:20px}
+}
+
+/* ============ MARQUEE — the service list, moving ============ */
+.marq{border-bottom:1px solid var(--rule-soft);overflow:hidden;padding:14px 0;background:var(--ink-sunk)}
+.marq-track{display:flex;gap:0;width:max-content;animation:marq 48s linear infinite}
+.marq span{font-family:var(--f-display);font-style:italic;font-size:19px;color:var(--text-dim);padding:0 22px;white-space:nowrap}
+.marq span::after{content:"·";color:var(--brass);margin-left:44px}
+@keyframes marq{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){ .marq-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center} }
+
+/* ============ CREDENTIALS ============ */
+.creds{border-bottom:1px solid var(--rule-soft)}
+.creds-in{max-width:var(--maxw);margin:0 auto;padding:0 28px;display:grid;grid-template-columns:repeat(4,1fr)}
+.cred{padding:30px 26px 32px;border-left:1px solid var(--rule-soft)}
+.cred:first-child{border-left:0;padding-left:0}
+.cred b{display:block;font-family:var(--f-display);font-weight:700;font-size:26px;line-height:1.14;margin:9px 0 6px}
+.cred span{font-size:13.5px;color:var(--text-dim);line-height:1.45;display:block}
+@media(max-width:860px){
+  .creds-in{grid-template-columns:1fr 1fr}
+  .cred{border-left:0;border-top:1px solid var(--rule-soft);padding:24px 0}
+  .cred:nth-child(2n){padding-left:26px;border-left:1px solid var(--rule-soft)}
+}
+
+/* ============ SECTIONS ============ */
+section{padding:84px 0;border-bottom:1px solid var(--rule-soft)}
+.sec-head{margin-bottom:44px}
+h2{font-family:var(--f-display);font-weight:700;font-size:clamp(32px,5vw,52px);line-height:1.06;letter-spacing:-.012em;margin-top:12px}
+h2 i{font-weight:400;color:var(--brass)}
+.sec-intro{max-width:56ch;margin-top:18px;color:var(--text-dim);font-size:17.5px}
+.two{display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:start}
+@media(max-width:900px){ .two{grid-template-columns:1fr;gap:36px} }
+figure.ph{margin:0}
+figure.ph img{width:100%;height:auto;border:1px solid var(--rule)}
+figure.ph figcaption{margin-top:10px;font-size:12.5px;color:var(--text-dim);line-height:1.5}
+figure.ph figcaption b{color:var(--brass);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:10.5px;display:block;margin-bottom:3px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal a{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;border:1px solid var(--rule);background:var(--ink-sunk)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.gal a:hover img{transform:scale(1.035)}
+.gal .tag{position:absolute;left:12px;top:12px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#E8E5DD;background:rgba(19,19,24,.7);padding:5px 8px;border-left:2px solid var(--brass)}
+.gal .wide{grid-column:span 2;aspect-ratio:auto}
+@media(max-width:700px){ .gal{grid-template-columns:1fr 1fr;gap:10px} .gal .wide{grid-column:span 2} }
+@media (prefers-reduced-motion:reduce){ .gal img{transition:none} }
+
+/* heritage */
+.feature{position:relative;margin-bottom:56px;border:1px solid var(--rule)}
+.feature img{width:100%;height:auto;max-height:640px;object-fit:cover;object-position:center 35%}
+.feature figcaption{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;padding:14px 18px;border-top:1px solid var(--rule);font-size:13px;color:var(--text-dim);background:var(--ink-raised)}
+.feature figcaption b{font-family:var(--f-display);color:var(--brass);font-size:20px;font-weight:700}
+.tl-item{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:0 40px;padding:22px 0;border-top:1px solid var(--rule-soft)}
+.tl-item:first-child{border-top:1px solid var(--rule)}
+.yr{font-family:var(--f-display);font-weight:700;font-size:30px;color:var(--brass);font-variant-numeric:tabular-nums;line-height:1.1}
+.tl-body h3{font-size:19px;font-weight:600;margin-bottom:5px}
+.tl-body p{color:var(--text-dim);max-width:62ch;font-size:16px}
+@media(max-width:820px){ .tl-item{grid-template-columns:1fr;gap:6px} .yr{font-size:24px} }
+.arch3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+@media(max-width:800px){ .arch3{grid-template-columns:1fr} }
+.quote{padding:70px 0 0}
+blockquote{margin:0;max-width:22ch}
+blockquote p{font-family:var(--f-display);font-style:italic;font-weight:400;font-size:clamp(28px,4.8vw,50px);line-height:1.15;letter-spacing:-.01em}
+blockquote footer{margin-top:22px;font-size:13px;color:var(--text-dim);letter-spacing:.04em}
+blockquote footer b{color:var(--text);font-weight:600}
+.qgrid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:56px;align-items:center}
+@media(max-width:900px){ .qgrid{grid-template-columns:1fr;gap:32px} }
+
+/* book */
+.book{display:grid;grid-template-columns:320px minmax(0,1fr);gap:48px;align-items:center}
+@media(max-width:760px){ .book{grid-template-columns:1fr;gap:28px} }
+.book h3{font-family:var(--f-display);font-weight:700;font-size:30px;line-height:1.15;margin-bottom:14px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 26px;margin:20px 0 26px;font-size:13px;color:var(--text-dim);font-variant-numeric:tabular-nums}
+.meta div b{color:var(--text);font-weight:600}
+
+/* listino */
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:0 64px}
+@media(max-width:820px){ .menu{grid-template-columns:1fr} }
+.row{display:flex;align-items:baseline;gap:14px;padding:15px 0;border-bottom:1px solid var(--rule-soft)}
+.row .nm{font-weight:500;font-size:16.5px}
+.row .nm small{display:block;font-weight:400;font-size:13px;color:var(--text-dim);margin-top:2px}
+.row .dots{flex:1;border-bottom:1px dotted var(--rule);transform:translateY(-4px)}
+.row .pr{font-family:var(--f-display);font-weight:700;font-size:22px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.row.hi .pr{color:var(--brass)}
+.tagnew{font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--btn-ink);background:var(--brass);padding:2px 6px;border-radius:2px;vertical-align:middle;margin-left:8px}
+.also{margin-top:34px;font-size:14.5px;color:var(--text-dim);max-width:70ch}
+.also b{color:var(--text);font-weight:600}
+
+/* reviews */
+.stars{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.big{font-family:var(--f-display);font-weight:900;font-size:64px;line-height:1;font-variant-numeric:tabular-nums}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:44px}
+@media(max-width:820px){ .revs{grid-template-columns:1fr;gap:26px} }
+.rev p{font-family:var(--f-display);font-style:italic;font-size:19px;line-height:1.45}
+.rev cite{display:block;margin-top:12px;font-family:var(--f-body);font-style:normal;font-size:12.5px;color:var(--text-dim);letter-spacing:.05em}
+
+/* faq */
+.faq details{border-top:1px solid var(--rule-soft)}
+.faq details:last-child{border-bottom:1px solid var(--rule-soft)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 0;font-size:18px;font-weight:600;display:flex;justify-content:space-between;gap:20px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-display);font-size:28px;color:var(--brass);line-height:1;flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 0 22px;color:var(--text-dim);max-width:68ch;font-size:16px}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+@media(max-width:820px){ .visit{grid-template-columns:1fr;gap:38px} }
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:11px 0;border-bottom:1px solid var(--rule-soft);font-size:15.5px}
+.hours td:last-child{text-align:right;color:var(--text-dim)}
+.hours tr.closed td{color:var(--text-dim)}
+.addr{font-size:16px;line-height:1.75}
+.addr a{color:var(--brass);text-decoration:none}
+.addr a:hover{text-decoration:underline}
+.visit-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+
+footer.foot{padding:40px 0 48px;font-size:13px;color:var(--text-dim)}
+.foot-in{max-width:var(--maxw);margin:0 auto;padding:0 28px;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center}
+.foot-in .mark{font-size:15px}
+.foot-links{display:flex;gap:18px}
+.foot-links a{text-decoration:none;color:var(--text-dim)}
+.foot-links a:hover{color:var(--brass)}
+.foot-note{margin-left:auto;text-align:right;max-width:46ch;line-height:1.5}
+@media(max-width:700px){ .foot-note{margin-left:0;text-align:left} body{padding-bottom:64px} }
+
+/* sticky mobile action bar */
+.mbar{display:none}
+@media(max-width:700px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:1px;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--rule);border-top:1px solid var(--rule)}
+  .mbar a{display:block;text-align:center;padding:15px 10px;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;background:var(--ink-raised);color:var(--text)}
+  .mbar a.primary{background:var(--brass);color:var(--btn-ink)}
+}
+
+/* language */
+:root:not([data-lang="en"]) [data-en]{display:none!important}
+:root[data-lang="en"] [data-it]{display:none!important}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="mark" href="#top">RUSSO <span class="mk2">23</span><small>BELLI CAPELLI · VIA MEDA 23 · MILANO</small></a>
+    <nav class="links" aria-label="Sezioni">
+      <a href="#maestro">Raffaele</a>
+      <a href="#lavori"><span data-it>I lavori</span><span data-en>The work</span></a>
+      <a href="#storia"><span data-it>La storia</span><span data-en>The story</span></a>
+      <a href="#listino"><span data-it>Listino</span><span data-en>Prices</span></a>
+      <a href="#visita"><span data-it>Dove siamo</span><span data-en>Find us</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Lingua">
+      <button id="b-it" aria-pressed="true">IT</button>
+      <button id="b-en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn" href="https://bellicapellibyrusso.mytreatwell.it/" target="_blank" rel="noopener"><span data-it>Prenota</span><span data-en>Book</span></a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <div>
+        <div class="eyebrow">Belli Capelli · Via Giuseppe Meda 23 · <b>Milano</b></div>
+        <h1 class="word">RUSSO <span class="num">23</span><span class="sm">belli capelli · via Meda</span></h1>
+      </div>
+      <div>
+        <div class="since"><span data-it>Raffaele Russo, maestro d'arte. Parrucchiere e barbiere in via Meda dal 1998.</span><span data-en>Raffaele Russo, maestro d'arte. Hairdresser and barber on via Meda since 1998.</span></div>
+        <p class="deck">
+          <span data-it>Trentacinque anni di mestiere, il diploma di <em>maestro d'arte</em> maschile e femminile dell'Accademia A.N.A.M. e gli anni tra Parigi, Londra, Amsterdam e Barcellona. Il mestiere l'ha imparato da suo padre <em>Vincenzo</em>, campione del mondo di acconciatura maschile.</span>
+          <span data-en>Thirty-five years at the trade, the A.N.A.M. Academy diploma as a <em>maestro d'arte</em> in men's and women's hairdressing, and years between Paris, London, Amsterdam and Barcelona. He learned the craft from his father <em>Vincenzo</em>, world champion in men's hairdressing.</span>
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="https://bellicapellibyrusso.mytreatwell.it/" target="_blank" rel="noopener"><span data-it>Prenota un appuntamento</span><span data-en>Book an appointment</span></a>
+          <a class="btn ghost" href="tel:+390289420560">02 8942 0560</a>
+        </div>
+        <div class="proof"><b>4,8</b><span class="st">★★★★★</span><span><span data-it>353 recensioni verificate su Treatwell</span><span data-en>353 verified reviews on Treatwell</span></span></div>
+      </div>
+    </div>
+    <figure class="hero-band">
+      <img src="img/arch-1970s-medaglie.jpg" width="724" height="516" alt="Anni Settanta: il giurato Vincenzo Russo, padre di Raffaele, in smoking con lo scudetto tricolore dell'Accademia A.N.A.M. accanto al campione Filiberto Turli con la medaglia" fetchpriority="high">
+      <figcaption><b><span data-it>Anni '70</span><span data-en>1970s</span></b><span><span data-it>Il giurato Vincenzo Russo, direttore tecnico nazionale A.N.A.M., con il campione Turli e l'allenatore Valmori. Da qui comincia la scuola.</span><span data-en>Juror Vincenzo Russo, A.N.A.M. national technical director, with champion Turli and coach Valmori. This is where the schooling begins.</span></span></figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="marq" aria-hidden="true">
+  <div class="marq-track">
+    <span>Taglio uomo</span><span>Barba a rasoio</span><span>Taglio e piega</span><span>Colore</span><span>Balayage e shatush</span><span>Rituale cuoio capelluto</span><span>Extensions</span><span>Cheratina</span><span>Sposa e sposo</span><span>Taglio bambino</span>
+    <span>Taglio uomo</span><span>Barba a rasoio</span><span>Taglio e piega</span><span>Colore</span><span>Balayage e shatush</span><span>Rituale cuoio capelluto</span><span>Extensions</span><span>Cheratina</span><span>Sposa e sposo</span><span>Taglio bambino</span>
+  </div>
+</div>
+
+<div class="creds">
+  <div class="creds-in">
+    <div class="cred"><div class="label">Qualifica</div><b>Maestro<br>d'arte</b><span data-it>Accademia A.N.A.M., maschile e femminile</span><span data-en>A.N.A.M. Academy, men's &amp; women's</span></div>
+    <div class="cred"><div class="label"><span data-it>Insegnamento</span><span data-en>Teaching</span></div><b><span data-it>Docente<br>e formatore</span><span data-en>Instructor<br>&amp; trainer</span></b><span data-it>Ha formato altri professionisti del mestiere</span><span data-en>Has trained other professionals in the trade</span></div>
+    <div class="cred"><div class="label"><span data-it>Recensioni</span><span data-en>Reviews</span></div><b>4,8 / 5</b><span data-it>Su 353 recensioni verificate</span><span data-en>Across 353 verified reviews</span></div>
+    <div class="cred"><div class="label"><span data-it>La scuola</span><span data-en>The school</span></div><b><span data-it>Figlio<br>d'arte</span><span data-en>Born to<br>the trade</span></b><span data-it>Di Vincenzo Russo, campione del mondo</span><span data-en>Son of Vincenzo Russo, world champion</span></div>
+  </div>
+</div>
+
+<section id="maestro">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="label"><span data-it>Chi vi taglia i capelli</span><span data-en>Who cuts your hair</span></div>
+      <h2><span data-it>Raffaele Russo,<br><i>maestro d'arte.</i></span><span data-en>Raffaele Russo,<br><i>maestro d'arte.</i></span></h2>
+    </div>
+    <div class="two">
+      <div>
+        <p style="font-size:18.5px;max-width:60ch">
+          <span data-it>In via Meda dal 1998, nello stesso locale, che è di sua proprietà. Prima: dieci anni accanto a suo padre, il diploma dell'Accademia A.N.A.M. come maestro d'arte maschile e femminile, e gli anni all'estero — Parigi, Londra, Amsterdam, Barcellona. Ne è tornato con un salone pensato per una clientela internazionale: qui si parla italiano e inglese.</span>
+          <span data-en>On via Meda since 1998, in the same premises, which he owns. Before that: ten years at his father's side, the A.N.A.M. Academy diploma as a maestro d'arte in men's and women's hairdressing, and the years abroad — Paris, London, Amsterdam, Barcelona. He came back with a salon built for an international clientele: Italian and English are both spoken here.</span>
+        </p>
+        <p class="dim" style="font-size:18.5px;max-width:60ch;margin-top:20px">
+          <span data-it>Ha insegnato il mestiere ad altri professionisti prima di dedicarsi soltanto ai suoi clienti. È il motivo per cui in questo salone la consulenza viene prima delle forbici: capire la testa che si ha davanti è la parte che si impara per ultima.</span>
+          <span data-en>He taught the trade to other professionals before devoting himself to his own clients. It is why, in this shop, the consultation comes before the scissors: reading the head in front of you is the part you learn last.</span>
+        </p>
+        <div class="hero-cta" style="margin-top:30px">
+          <a class="btn" href="https://bellicapellibyrusso.mytreatwell.it/" target="_blank" rel="noopener"><span data-it>Prenota con Raffaele</span><span data-en>Book with Raffaele</span></a>
+        </div>
+      </div>
+      <figure class="ph">
+        <img src="img/salone.jpg" width="1000" height="723" loading="lazy" decoding="async" alt="L'interno del salone Belli Capelli di Raffaele Russo in via Giuseppe Meda 23 a Milano: specchi, postazioni e lavaggi">
+        <figcaption><b><span data-it>Il salone</span><span data-en>The salon</span></b><span data-it>Via Giuseppe Meda 23 — sei postazioni, un solo maestro.</span><span data-en>Via Giuseppe Meda 23 — six chairs, one master.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="lavori">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="label"><span data-it>Uomo e donna</span><span data-en>Men and women</span></div>
+      <h2><span data-it>I lavori,<br><i>senza filtri.</i></span><span data-en>The work,<br><i>unfiltered.</i></span></h2>
+      <p class="sec-intro"><span data-it>Fotografati in salone, con la luce che c'è. Tagli uomo a forbice e rasoio, colore e balayage, pieghe e onde.</span><span data-en>Photographed in the salon, in the light we have. Men's scissor and razor cuts, colour and balayage, blow-dries and waves.</span></p>
+    </div>
+    <div class="gal">
+      <a href="#prenota"><img src="img/work-skinfade.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Taglio uomo skin fade con sfumatura alta, salone Raffaele Russo Milano"><span class="tag">Uomo</span></a>
+      <a href="#prenota"><img src="img/work-onde.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Balayage caldo su capelli lunghi mossi, parrucchiere donna Milano via Meda"><span class="tag">Colore</span></a>
+      <a href="#prenota"><img src="img/work-gal09.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Taglio uomo con ciuffo texturizzato e lati sfumati, barbiere Milano Navigli"><span class="tag">Uomo</span></a>
+      <a href="#prenota"><img src="img/work-taglio.jpg" width="696" height="800" loading="lazy" decoding="async" alt="Taglio contemporaneo medio con onde e schiariture, Belli Capelli Milano"><span class="tag">Donna</span></a>
+      <a href="#prenota"><img src="img/work-colore.jpg" width="606" height="800" loading="lazy" decoding="async" alt="Colorazione creativa viola e rosso su capelli lisci lunghi"><span class="tag">Colore</span></a>
+      <a href="#prenota"><img src="img/work-blonde.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Onde morbide su capelli biondi lunghi, piega in salone a Milano"><span class="tag">Piega</span></a>
+      <a href="#prenota"><img src="img/work-gal04.jpg" width="416" height="556" loading="lazy" decoding="async" alt="Taglio bambino con sfumatura e ciuffo, barbiere per bambini Milano"><span class="tag">Bambino</span></a>
+      <a href="#prenota"><img src="img/work-acconciatura.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Acconciatura da sera con onde naturali e schiariture caramello"><span class="tag">Donna</span></a>
+      <a href="#prenota"><img src="img/work-balayage.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Balayage naturale su capelli lunghi castani, risultato in salone"><span class="tag">Colore</span></a>
+      <a href="#prenota"><img src="img/work-rosso.jpg" width="512" height="640" loading="lazy" decoding="async" alt="Colore rosso rame intenso con boccoli morbidi, colorazione in salone a Milano"><span class="tag">Colore</span></a>
+      <a href="#prenota"><img src="img/work-volume.jpg" width="512" height="640" loading="lazy" decoding="async" alt="Piega voluminosa con onde larghe su capelli castani lunghi"><span class="tag">Piega</span></a>
+      <a href="#prenota"><img src="img/work-waves.jpg" width="714" height="780" loading="lazy" decoding="async" alt="Onde biondo miele su capelli lunghi, taglio e piega donna via Meda Milano"><span class="tag">Donna</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="storia">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="label">1938 — oggi</div>
+      <h2><span data-it>La scuola è cominciata<br><i>una generazione fa.</i></span><span data-en>The schooling began<br><i>a generation ago.</i></span></h2>
+      <p class="sec-intro"><span data-it>Raffaele ha imparato da suo padre Vincenzo, che il mestiere l'ha portato fino al titolo mondiale. Non è una catena e non vuole diventarlo: è un mestiere passato di mano una volta sola.</span><span data-en>Raffaele learned from his father Vincenzo, who took the craft as far as a world title. Not a chain, and it never wanted to be: a trade handed over exactly once.</span></p>
+    </div>
+
+    <figure class="feature">
+      <img src="img/arch-newyork-1976.jpg" width="1000" height="750" loading="lazy" decoding="async" alt="New York 1976: la squadra dell'Accademia A.N.A.M. ai Campionati Mondiali con il giurato Vincenzo Russo, l'allenatore Valmori e i concorrenti Turli e Dotto con i modelli">
+      <figcaption><b>New York, 1976</b><span data-it>La squadra A.N.A.M. ai Campionati Mondiali: il giurato Russo, l'allenatore Valmori, i concorrenti Turli e Dotto con i loro modelli. Archivio Filiberto Turli.</span><span data-en>The A.N.A.M. team at the World Championships: juror Russo, coach Valmori, competitors Turli and Dotto with their models. Filiberto Turli archive.</span></figcaption>
+    </figure>
+
+    <div class="tl">
+        <div class="tl-item"><div class="yr">1938</div><div class="tl-body"><h3><span data-it>Nasce Vincenzo</span><span data-en>Vincenzo is born</span></h3><p><span data-it>Cerignola, provincia di Foggia, 26 gennaio.</span><span data-en>Cerignola, province of Foggia, 26 January.</span></p></div></div>
+        <div class="tl-item"><div class="yr">1954</div><div class="tl-body"><h3><span data-it>Milano, a sedici anni</span><span data-en>Milan, at sixteen</span></h3><p><span data-it>Parte dalla Puglia il 17 gennaio con un mestiere da imparare e nessun contatto in città.</span><span data-en>He leaves Puglia on 17 January with a trade to learn and no contacts in the city.</span></p></div></div>
+        <div class="tl-item"><div class="yr">1958</div><div class="tl-body"><h3><span data-it>Bottega «Figaro Liso»</span><span data-en>The «Figaro Liso» shop</span></h3><p><span data-it>L'apprendistato comincia l'8 gennaio. Da qui nascono i negozi di via Gaetano Negri e Santa Maria Segreta, dove passeranno Montanelli, Pirelli, Moratti, Spadolini, Rivera.</span><span data-en>His apprenticeship begins on 8 January. His own shops on via Gaetano Negri and Santa Maria Segreta follow — where Montanelli, Pirelli, Moratti, Spadolini and Rivera will sit.</span></p></div></div>
+        <div class="tl-item"><div class="yr">1970</div><div class="tl-body"><h3><span data-it>Campione del mondo</span><span data-en>World champion</span></h3><p><span data-it>Il titolo mondiale di acconciatura maschile, con un taglio scolpito a rasoio — la tecnica che darà il titolo al suo libro.</span><span data-en>The world title in men's hairdressing, with a cut sculpted using a razor — the technique that later gave his book its title.</span></p></div></div>
+        <div class="tl-item"><div class="yr">1976</div><div class="tl-body"><h3><span data-it>Direttore tecnico A.N.A.M.</span><span data-en>A.N.A.M. technical director</span></h3><p><span data-it>Guida tecnica nazionale dell'Accademia, giurato italiano ai Mondiali di New York. Riceve l'Ambrogino d'Oro del Comune di Milano.</span><span data-en>National technical lead of the Academy, Italy's juror at the New York World Championships. He receives Milan's Ambrogino d'Oro.</span></p></div></div>
+        <div class="tl-item"><div class="yr">1998</div><div class="tl-body"><h3><span data-it>Raffaele apre in via Meda</span><span data-en>Raffaele opens on via Meda</span></h3><p><span data-it>Dopo dieci anni accanto al padre e gli anni tra Parigi, Londra, Amsterdam e Barcellona, apre il suo salone. Locale di proprietà, mai spostato.</span><span data-en>After ten years at his father's side and years between Paris, London, Amsterdam and Barcelona, he opens his own salon. He owns the premises, and has never moved.</span></p></div></div>
+        <div class="tl-item"><div class="yr">2018</div><div class="tl-body"><h3>«Le mani tra i capelli»</h3><p><span data-it>Per gli ottant'anni di Vincenzo esce l'autobiografia, presentata alla Camera di Commercio di Milano.</span><span data-en>Vincenzo's autobiography is published for his eightieth birthday and launched at the Milan Chamber of Commerce.</span></p></div></div>
+        <div class="tl-item"><div class="yr">2026</div><div class="tl-body"><h3><span data-it>Il mestiere resta</span><span data-en>The craft remains</span></h3><p><span data-it>Vincenzo si è spento il 9 maggio, a 88 anni. La bottega di suo figlio è aperta.</span><span data-en>Vincenzo died on 9 May, aged 88. His son's shop is open.</span></p></div></div>
+      
+    </div>
+
+    <div class="arch3">
+      <figure class="ph"><img src="img/arch-evian-1974.jpg" width="800" height="549" loading="lazy" decoding="async" alt="Evian 1974: esultanza di Fregni, Russo e Andretta con il vincitore Turli al campionato di acconciatura"><figcaption><b>Evian, 1974</b><span data-it>L'esultanza di Fregni, Russo e Andretta con il vincitore Turli.</span><span data-en>Fregni, Russo and Andretta celebrating with the winner, Turli.</span></figcaption></figure>
+      <figure class="ph"><img src="img/arch-gala.jpg" width="800" height="573" loading="lazy" decoding="async" alt="Gran Galà dell'acconciatura anni Settanta: Silvio Fregni con la signora e Vincenzo Russo al tavolo"><figcaption><b><span data-it>Il Gran Galà</span><span data-en>The Gran Galà</span></b><span data-it>Silvio Fregni e signora, e Russo, a una serata dell'Accademia.</span><span data-en>Silvio Fregni and his wife, and Russo, at an Academy evening.</span></figcaption></figure>
+      <figure class="ph"><img src="img/vincenzo-premiazione.jpg" width="488" height="252" loading="lazy" decoding="async" alt="Vincenzo Russo da giovane, in abito scuro con lo scudetto tricolore della nazionale, stringe la mano a una premiazione di gara"><figcaption><b>Vincenzo Russo</b><span data-it>Premiato in gara, con lo scudetto tricolore sul petto. La fotografia di copertina del suo libro.</span><span data-en>Congratulated on the competition floor, the tricolour badge on his chest. The cover photograph of his book.</span></figcaption></figure>
+    </div>
+
+    <div class="quote">
+      <div class="qgrid">
+        <div class="grid">
+          <div class="label">il Giornale<br>2018</div>
+          <blockquote>
+            <p>&ldquo;<span data-it>Passo il tempo nel negozio di mio figlio Raffaele, in via Meda.</span><span data-en>I spend my time in my son Raffaele's shop, on via Meda.</span>&rdquo;</p>
+            <footer><b>Vincenzo Russo</b>, <span data-it>a ottant'anni, intervistato sul suo cliente più celebre</span><span data-en>at eighty, interviewed about his most famous client</span></footer>
+          </blockquote>
+        </div>
+        <figure class="ph">
+          <img src="img/vincenzo-2026.jpg" width="269" height="612" loading="lazy" decoding="async" alt="Ritratto di Vincenzo Russo negli ultimi anni, sorridente, in giacca scura e cravatta" style="max-height:440px;width:auto;margin:0 auto">
+          <figcaption style="text-align:center"><b>Vincenzo Russo, 1938 – 2026</b><span data-it>La fotografia con cui il salone lo ha ricordato, maggio 2026.</span><span data-en>The photograph with which the salon remembered him, May 2026.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+<section id="libro">
+  <div class="wrap">
+    <div class="book">
+      <figure class="ph">
+        <img src="img/libro-copertina.jpg" width="488" height="325" loading="lazy" decoding="async" alt="Copertina del libro Le mani tra i capelli di Vincenzo Russo, Edizioni Insieme 2018">
+        <figcaption><b>Ed. Insieme, 2018</b></figcaption>
+      </figure>
+      <div>
+        <div class="label"><span data-it>Il libro</span><span data-en>The book</span></div>
+        <h3>Le mani tra i capelli<br><span style="color:var(--brass);font-style:italic;font-weight:400">e un taglio scolpito a rasoio<br>per la vittoria mondiale</span></h3>
+        <p class="dim" style="max-width:52ch"><span data-it>L'autobiografia di Vincenzo Russo: da un paese della Puglia alle teste che hanno fatto Milano. Scritta a ottant'anni, con le fotografie delle gare.</span><span data-en>Vincenzo Russo's autobiography: from a small town in Puglia to the heads that built Milan. Written at eighty, with photographs from the competitions.</span></p>
+        <div class="meta">
+          <div><span data-it>Editore</span><span data-en>Publisher</span> <b>Ed. Insieme</b></div>
+          <div><span data-it>Pagine</span><span data-en>Pages</span> <b>176</b></div>
+          <div>ISBN <b>9788876022715</b></div>
+          <div><span data-it>Prezzo</span><span data-en>Price</span> <b>€ 15,00</b></div>
+        </div>
+        <a class="btn" href="https://www.ibs.it/mani-tra-capelli-taglio-scolpito-libro-vincenzo-russo/e/9788876022715" target="_blank" rel="noopener"><span data-it>Acquista il libro</span><span data-en>Buy the book</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="listino">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="label"><span data-it>Servizi e listino</span><span data-en>Services &amp; prices</span></div>
+      <h2><span data-it>Un prezzo solo,<br><i>tutto l'anno.</i></span><span data-en>One price,<br><i>all year round.</i></span></h2>
+      <p class="sec-intro"><span data-it>Prezzi di quartiere, senza coupon e senza offerte lampo. Quello che leggete è quello che pagate, e comprende la consulenza iniziale e il caffè.</span><span data-en>Neighbourhood prices, with no coupons and no flash offers. What you read is what you pay, and it includes the initial consultation and a coffee.</span></p>
+    </div>
+    <div class="menu">
+      <div>
+        <div class="row"><div class="nm"><span data-it>Taglio uomo</span><span data-en>Men's cut</span><small><span data-it>Shampoo, taglio a forbice o rasoio, styling</span><span data-en>Shampoo, scissor or razor cut, styling</span></small></div><div class="dots"></div><div class="pr">€ 28</div></div>
+        <div class="row"><div class="nm"><span data-it>Taglio e barba</span><span data-en>Cut &amp; beard</span><small><span data-it>Rifinitura barba a rasoio</span><span data-en>Razor-finished beard</span></small></div><div class="dots"></div><div class="pr">€ 38</div></div>
+        <div class="row"><div class="nm"><span data-it>Rasatura tradizionale</span><span data-en>Traditional shave</span><small><span data-it>Panno caldo, rasoio, vapore all'ozono</span><span data-en>Hot towel, straight razor, ozone steam</span></small></div><div class="dots"></div><div class="pr">€ 25</div></div>
+        <div class="row"><div class="nm"><span data-it>Taglio bambino</span><span data-en>Children's cut</span><small><span data-it>Fino a 12 anni</span><span data-en>Up to age 12</span></small></div><div class="dots"></div><div class="pr">€ 18</div></div>
+      </div>
+      <div>
+        <div class="row"><div class="nm"><span data-it>Taglio e piega donna</span><span data-en>Women's cut &amp; blow-dry</span><small><span data-it>Consulenza, taglio, piega</span><span data-en>Consultation, cut, blow-dry</span></small></div><div class="dots"></div><div class="pr">€ 48</div></div>
+        <div class="row"><div class="nm"><span data-it>Colore, taglio e piega</span><span data-en>Colour, cut &amp; blow-dry</span><small><span data-it>Colore su misura</span><span data-en>Bespoke colour</span></small></div><div class="dots"></div><div class="pr">€ 78</div></div>
+        <div class="row hi"><div class="nm"><span data-it>Rituale cuoio capelluto</span><span data-en>Scalp ritual</span><span class="tagnew"><span data-it>novità</span><span data-en>new</span></span><small><span data-it>60 minuti, su appuntamento</span><span data-en>60 minutes, by appointment only</span></small></div><div class="dots"></div><div class="pr">€ 65</div></div>
+        <div class="row"><div class="nm"><span data-it>Piega</span><span data-en>Blow-dry</span><small><span data-it>Senza taglio</span><span data-en>Without a cut</span></small></div><div class="dots"></div><div class="pr">€ 25</div></div>
+      </div>
+    </div>
+    <p class="also"><b><span data-it>Su preventivo:</span><span data-en>On quotation:</span></b> <span data-it>balayage e shatush, extensions, trattamenti alla cheratina e al collagene, permanente, servizio sposa e sposo, servizio a domicilio, pacchetti di abbonamento.</span><span data-en>balayage and shatush, extensions, keratin and collagen treatments, perms, bride and groom service, home service, subscription packages.</span></p>
+  </div>
+</section>
+
+<section id="recensioni">
+  <div class="wrap">
+    <div class="stars">
+      <div class="big">4,8</div>
+      <div>
+        <div class="label">★★★★★</div>
+        <div class="dim" style="font-size:15px"><span data-it><b style="color:var(--text)">353 recensioni</b> verificate su Treatwell</span><span data-en><b style="color:var(--text)">353 verified reviews</b> on Treatwell</span></div>
+      </div>
+    </div>
+    <div class="revs">
+      <div class="rev"><p>&ldquo;<span data-it>Ascolta prima di tagliare. Raro.</span><span data-en>He listens before he cuts. Rare.</span>&rdquo;</p><cite><span data-it>Cliente Treatwell</span><span data-en>Treatwell client</span></cite></div>
+      <div class="rev"><p>&ldquo;<span data-it>Mani esperte, mestiere vero.</span><span data-en>Expert hands, a real craft.</span>&rdquo;</p><cite><span data-it>Cliente Treatwell</span><span data-en>Treatwell client</span></cite></div>
+      <div class="rev"><p>&ldquo;<span data-it>Ci torno da anni, non cambio.</span><span data-en>I've come back for years. I won't change.</span>&rdquo;</p><cite><span data-it>Cliente Treatwell</span><span data-en>Treatwell client</span></cite></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="label"><span data-it>Domande frequenti</span><span data-en>Frequently asked</span></div>
+      <h2><span data-it>Prima di venire.</span><span data-en>Before you come.</span></h2>
+    </div>
+    <div class="faq">
+      <details><summary><span data-it>Serve prenotare?</span><span data-en>Do I need to book?</span></summary><div class="ans"><span data-it>No: si entra anche senza appuntamento, ed è così che arriva metà dei clienti. Prenotare online o al telefono garantisce però l'orario, e per colore, rituale e servizi lunghi è necessario.</span><span data-en>No: walk-ins are welcome, and that's how half our clients arrive. Booking online or by phone guarantees your slot, and it is required for colour, the scalp ritual and other long services.</span></div></details>
+      <details><summary><span data-it>Tagliate sia uomo che donna?</span><span data-en>Do you do both men's and women's hair?</span></summary><div class="ans"><span data-it>Sì. Raffaele è maestro d'arte maschile e femminile: barba e rasoio da una parte, colore, balayage e pieghe dall'altra, nello stesso salone.</span><span data-en>Yes. Raffaele is a maestro d'arte in both men's and women's hairdressing: beard and razor on one side, colour, balayage and blow-dries on the other, all in the same salon.</span></div></details>
+      <details><summary><span data-it>Parlate inglese?</span><span data-en>Do you speak English?</span></summary><div class="ans"><span data-it>Sì. Raffaele ha lavorato a Parigi, Londra, Amsterdam e Barcellona e il salone è nato per una clientela internazionale.</span><span data-en>Yes. Raffaele worked in Paris, London, Amsterdam and Barcelona, and the salon was built for an international clientele.</span></div></details>
+      <details><summary><span data-it>Come si arriva in via Meda?</span><span data-en>How do I get to via Meda?</span></summary><div class="ans"><span data-it>Autobus 59, 71 e 91, fermata viale Tibaldi / via Meda, a due passi dal salone. In tram, la linea 3 (fermata Meda) e la 15 su viale Tibaldi. Dai Navigli e da Porta Genova sono dieci minuti a piedi.</span><span data-en>Buses 59, 71 and 91 stop at viale Tibaldi / via Meda, two steps from the salon. By tram, line 3 (Meda stop) and line 15 along viale Tibaldi. From the Navigli and Porta Genova it's a ten-minute walk.</span></div></details>
+      <details><summary><span data-it>Quanto dura un taglio?</span><span data-en>How long does a cut take?</span></summary><div class="ans"><span data-it>Un taglio uomo con consulenza circa 35 minuti; taglio e barba 50; taglio e piega donna un'ora. Il rituale del cuoio capelluto dura un'ora esatta.</span><span data-en>A men's cut with consultation takes about 35 minutes; cut and beard 50; women's cut and blow-dry one hour. The scalp ritual is exactly one hour.</span></div></details>
+      <details><summary><span data-it>Fate la barba con il rasoio a mano libera?</span><span data-en>Do you shave with a straight razor?</span></summary><div class="ans"><span data-it>Sì, con panno caldo e vaporizzatore all'ozono per la pulizia della pelle dopo la rasatura. È il mestiere di famiglia: il titolo mondiale di Vincenzo Russo fu vinto con un taglio scolpito a rasoio.</span><span data-en>Yes — with a hot towel and an ozone steamer to clean the skin after the shave. It's the family trade: Vincenzo Russo's world title was won with a razor-sculpted cut.</span></div></details>
+    </div>
+  </div>
+</section>
+
+<section id="visita">
+  <div class="wrap" id="prenota">
+    <div class="sec-head">
+      <div class="label"><span data-it>Dove siamo</span><span data-en>Find us</span></div>
+      <h2><span data-it>Via Giuseppe Meda 23,<br><i>Milano.</i></span><span data-en>Via Giuseppe Meda 23,<br><i>Milan.</i></span></h2>
+    </div>
+    <div class="visit">
+      <div>
+        <table class="hours"><tbody>
+          <tr class="closed"><td><span data-it>Lunedì</span><span data-en>Monday</span></td><td><span data-it>Chiuso</span><span data-en>Closed</span></td></tr>
+          <tr><td><span data-it>Martedì</span><span data-en>Tuesday</span></td><td>9.00 — 18.00</td></tr>
+          <tr><td><span data-it>Mercoledì</span><span data-en>Wednesday</span></td><td>9.00 — 18.00</td></tr>
+          <tr><td><span data-it>Giovedì</span><span data-en>Thursday</span></td><td>9.00 — 18.00</td></tr>
+          <tr><td><span data-it>Venerdì</span><span data-en>Friday</span></td><td>9.00 — 18.00</td></tr>
+          <tr><td><span data-it>Sabato</span><span data-en>Saturday</span></td><td>9.00 — 18.00</td></tr>
+          <tr class="closed"><td><span data-it>Domenica</span><span data-en>Sunday</span></td><td><span data-it>Chiuso</span><span data-en>Closed</span></td></tr>
+        </tbody></table>
+      </div>
+      <div>
+        <address class="addr" style="font-style:normal">
+          Belli Capelli di Russo Raffaele<br>Via Giuseppe Meda 23<br>20141 Milano (MI)<br><br>
+          <a href="tel:+390289420560">+39 02 8942 0560</a><br>
+          <a href="mailto:bellicapellimi@hotmail.it">bellicapellimi@hotmail.it</a><br>
+          <a href="https://www.google.com/maps/search/?api=1&query=Belli+Capelli+by+Russo+Via+Giuseppe+Meda+23+Milano" target="_blank" rel="noopener"><span data-it>Apri in Google Maps ↗</span><span data-en>Open in Google Maps ↗</span></a>
+        </address>
+        <p class="dim" style="margin-top:20px;font-size:14.5px"><span data-it>Fermata <b style="color:var(--text)">V.le Tibaldi / Via Meda</b> — autobus 59, 71, 91; tram 3 e 15. Zona Navigli–Tibaldi, dieci minuti a piedi da Porta Genova.</span><span data-en><b style="color:var(--text)">V.le Tibaldi / Via Meda</b> stop — buses 59, 71, 91; trams 3 and 15. Navigli–Tibaldi area, ten minutes' walk from Porta Genova.</span></p>
+        <div class="visit-cta">
+          <a class="btn" href="https://bellicapellibyrusso.mytreatwell.it/" target="_blank" rel="noopener"><span data-it>Prenota online</span><span data-en>Book online</span></a>
+          <a class="btn ghost" href="tel:+390289420560"><span data-it>Chiama il salone</span><span data-en>Call the shop</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <a class="mark" href="#top">RUSSO <span class="mk2">23</span><small>BELLI CAPELLI · VIA MEDA 23 · MILANO</small></a>
+    <div class="foot-links">
+      <a href="https://www.instagram.com/bellicapelli_milano/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/BellicapelliMilanoByRussoRaffaele/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.treatwell.it/salone/belli-capelli-by-russo/" target="_blank" rel="noopener">Treatwell</a>
+    </div>
+    <div class="foot-note"><span data-it>Belli Capelli di Russo Raffaele · Via Giuseppe Meda 23, 20141 Milano · P.IVA 11967670156 · Parrucchiere uomo e donna, barbiere · dal 1998</span><span data-en>Belli Capelli di Russo Raffaele · Via Giuseppe Meda 23, 20141 Milan · VAT 11967670156 · Men's &amp; women's hairdresser, barber · since 1998</span></div>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Azioni rapide">
+  <a href="tel:+390289420560"><span data-it>Chiama</span><span data-en>Call</span></a>
+  <a class="primary" href="https://bellicapellibyrusso.mytreatwell.it/" target="_blank" rel="noopener"><span data-it>Prenota</span><span data-en>Book</span></a>
+</nav>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"HairSalon",
+      "@id":"https://www.bellicapellibyrussomilano.it/#salon",
+      "name":"Russo 23",
+      "alternateName":["Russo Parrucchieri","Belli Capelli by Russo","Bellicapelli di Russo Raffaele","Raffaele Russo parrucchiere Milano"],
+      "description":"Parrucchiere uomo e donna e barbiere a Milano, via Giuseppe Meda 23 (zona Navigli–Tibaldi), dal 1998. Raffaele Russo, maestro d'arte A.N.A.M., figlio del campione del mondo Vincenzo Russo.",
+      "url":"https://www.bellicapellibyrussomilano.it/",
+      "image":"https://www.bellicapellibyrussomilano.it/img/arch-1970s-medaglie.jpg",
+      "telephone":"+39 02 8942 0560",
+      "email":"bellicapellimi@hotmail.it",
+      "priceRange":"€€",
+      "currenciesAccepted":"EUR",
+      "foundingDate":"1998",
+      "founder":{"@id":"https://www.bellicapellibyrussomilano.it/#raffaele"},
+      "address":{"@type":"PostalAddress","streetAddress":"Via Giuseppe Meda 23","postalCode":"20141","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},
+      "areaServed":["Milano","Navigli","Porta Genova","Tibaldi","Porta Romana"],
+      "knowsLanguage":["it","en"],
+      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"}],
+      "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","bestRating":"5","reviewCount":"353"},
+      "sameAs":["https://www.instagram.com/bellicapelli_milano/","https://www.facebook.com/BellicapelliMilanoByRussoRaffaele/","https://www.treatwell.it/salone/belli-capelli-by-russo/"],
+      "hasOfferCatalog":{"@type":"OfferCatalog","name":"Listino","itemListElement":[
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Taglio uomo"},"price":"28","priceCurrency":"EUR"},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Taglio e barba"},"price":"38","priceCurrency":"EUR"},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rasatura tradizionale a rasoio"},"price":"25","priceCurrency":"EUR"},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Taglio bambino"},"price":"18","priceCurrency":"EUR"},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Taglio e piega donna"},"price":"48","priceCurrency":"EUR"},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Colore, taglio e piega"},"price":"78","priceCurrency":"EUR"},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Rituale cuoio capelluto (60 min)"},"price":"65","priceCurrency":"EUR"},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Piega"},"price":"25","priceCurrency":"EUR"}
+      ]}
+    },
+    {
+      "@type":"Person","@id":"https://www.bellicapellibyrussomilano.it/#raffaele",
+      "name":"Raffaele Russo","jobTitle":"Parrucchiere e barbiere, maestro d'arte A.N.A.M.",
+      "worksFor":{"@id":"https://www.bellicapellibyrussomilano.it/#salon"},
+      "alumniOf":{"@type":"Organization","name":"Accademia Nazionale Acconciatori Misti (A.N.A.M.)"},
+      "parent":{"@id":"https://www.bellicapellibyrussomilano.it/#vincenzo"}
+    },
+    {
+      "@type":"Person","@id":"https://www.bellicapellibyrussomilano.it/#vincenzo",
+      "name":"Vincenzo Russo","birthDate":"1938-01-26","deathDate":"2026-05-09","birthPlace":"Cerignola, Italia",
+      "jobTitle":"Barbiere, campione del mondo di acconciatura maschile",
+      "award":["Campione del mondo di acconciatura maschile","Ambrogino d'Oro"],
+      "description":"Barbiere di Indro Montanelli, Leopoldo Pirelli, Angelo Moratti e Giovanni Spadolini. Direttore tecnico nazionale A.N.A.M."
+    },
+    {
+      "@type":"Book","name":"Le mani tra i capelli e un taglio scolpito a rasoio per la vittoria mondiale",
+      "author":{"@id":"https://www.bellicapellibyrussomilano.it/#vincenzo"},
+      "isbn":"9788876022715","publisher":{"@type":"Organization","name":"Ed. Insieme"},"datePublished":"2018","numberOfPages":"176","inLanguage":"it",
+      "offers":{"@type":"Offer","price":"15.00","priceCurrency":"EUR","url":"https://www.ibs.it/mani-tra-capelli-taglio-scolpito-libro-vincenzo-russo/e/9788876022715"}
+    },
+    {
+      "@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"Serve prenotare?","acceptedAnswer":{"@type":"Answer","text":"No: si entra anche senza appuntamento. Prenotare online o al telefono garantisce l'orario; per colore, rituale del cuoio capelluto e servizi lunghi è necessario."}},
+        {"@type":"Question","name":"Tagliate sia uomo che donna?","acceptedAnswer":{"@type":"Answer","text":"Sì. Raffaele Russo è maestro d'arte maschile e femminile: barba e rasoio, colore, balayage e pieghe nello stesso salone."}},
+        {"@type":"Question","name":"Parlate inglese?","acceptedAnswer":{"@type":"Answer","text":"Sì. Raffaele ha lavorato a Parigi, Londra, Amsterdam e Barcellona e il salone è nato per una clientela internazionale."}},
+        {"@type":"Question","name":"Come si arriva in via Meda?","acceptedAnswer":{"@type":"Answer","text":"Autobus 59, 71 e 91 (fermata viale Tibaldi / via Meda), tram 3 e 15. Dieci minuti a piedi dai Navigli e da Porta Genova."}},
+        {"@type":"Question","name":"Quanto dura un taglio?","acceptedAnswer":{"@type":"Answer","text":"Taglio uomo con consulenza circa 35 minuti; taglio e barba 50; taglio e piega donna un'ora; rituale del cuoio capelluto un'ora."}},
+        {"@type":"Question","name":"Fate la barba con il rasoio a mano libera?","acceptedAnswer":{"@type":"Answer","text":"Sì, con panno caldo e vaporizzatore all'ozono. Il titolo mondiale di Vincenzo Russo fu vinto con un taglio scolpito a rasoio."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var root=document.documentElement, it=document.getElementById('b-it'), en=document.getElementById('b-en');
+  function set(lang){
+    root.setAttribute('data-lang',lang); root.setAttribute('lang', lang==='en'?'en':'it');
+    it.setAttribute('aria-pressed',String(lang==='it')); en.setAttribute('aria-pressed',String(lang==='en'));
+    try{ localStorage.setItem('russo-lang',lang); }catch(e){}
+  }
+  it.addEventListener('click',function(){set('it')}); en.addEventListener('click',function(){set('en')});
+  var saved=null; try{ saved=localStorage.getItem('russo-lang'); }catch(e){}
+  set(saved==='en'?'en':'it');
+})();
+</script>
+</body>
+</html>
