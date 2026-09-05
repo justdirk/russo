@@ -1,0 +1,10 @@
+{
+ "name": "index.html",
+ "bytes": 85547,
+ "sha256": "3ee5eee63c7e61c78a577d5d23d825bfbee474a920a5771c801ea7e3e6f2de40",
+ "gz_sha256": "5a72302cc33dbedcd207ed74a2dabfdcfe47d7bde1eff657a5782a42a3a16f2c",
+ "parts": [
+  ["index.1.b64", 1, 150, "05a7a4e0bcf13de3b40bc4023e62fdbf22bf2be4fa0e723f4752580d9c7ae85e"],
+  ["index.2.b64", 1, 103, "cdf4f8ce8a73ce02a165f9e13381f8a6866a1843b54acf638c20ff23f31369c2"]
+ ]
+}
