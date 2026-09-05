@@ -1,5 +1,5 @@
 + date -u
-Sat Sep  5 20:47:55 UTC 2026
+Sat Sep  5 20:49:13 UTC 2026
 + echo '--- unpack bootstrap ---'
 --- unpack bootstrap ---
 + '[' -d bootstrap ']'
@@ -44,27 +44,27 @@ all gallery images present
 --- final ---
 + ls -la img
 total 1476
-drwxr-xr-x 2 runner runner   4096 Sep  5 20:47 .
-drwxr-xr-x 6 runner runner   4096 Sep  5 20:47 ..
--rw-r--r-- 1 runner runner  66782 Sep  5 20:47 arch-1970s-medaglie.jpg
--rw-r--r-- 1 runner runner  76209 Sep  5 20:47 arch-evian-1974.jpg
--rw-r--r-- 1 runner runner  78905 Sep  5 20:47 arch-gala.jpg
--rw-r--r-- 1 runner runner 135837 Sep  5 20:47 arch-newyork-1976.jpg
--rw-r--r-- 1 runner runner  34810 Sep  5 20:47 libro-copertina.jpg
--rw-r--r-- 1 runner runner  91873 Sep  5 20:47 salone.jpg
--rw-r--r-- 1 runner runner  26120 Sep  5 20:47 vincenzo-2026.jpg
--rw-r--r-- 1 runner runner  26512 Sep  5 20:47 vincenzo-premiazione.jpg
--rw-r--r-- 1 runner runner  93333 Sep  5 20:47 work-acconciatura.jpg
--rw-r--r-- 1 runner runner  48604 Sep  5 20:47 work-balayage.jpg
--rw-r--r-- 1 runner runner  80173 Sep  5 20:47 work-blonde.jpg
--rw-r--r-- 1 runner runner  68503 Sep  5 20:47 work-colore.jpg
--rw-r--r-- 1 runner runner  78055 Sep  5 20:47 work-gal04.jpg
--rw-r--r-- 1 runner runner 105221 Sep  5 20:47 work-gal09.jpg
--rw-r--r-- 1 runner runner  86571 Sep  5 20:47 work-onde.jpg
--rw-r--r-- 1 runner runner  49858 Sep  5 20:47 work-rosso.jpg
--rw-r--r-- 1 runner runner  62530 Sep  5 20:47 work-skinfade.jpg
--rw-r--r-- 1 runner runner  95095 Sep  5 20:47 work-taglio.jpg
--rw-r--r-- 1 runner runner  45352 Sep  5 20:47 work-volume.jpg
--rw-r--r-- 1 runner runner 104006 Sep  5 20:47 work-waves.jpg
+drwxr-xr-x 2 runner runner   4096 Sep  5 20:49 .
+drwxr-xr-x 6 runner runner   4096 Sep  5 20:49 ..
+-rw-r--r-- 1 runner runner  66782 Sep  5 20:49 arch-1970s-medaglie.jpg
+-rw-r--r-- 1 runner runner  76209 Sep  5 20:49 arch-evian-1974.jpg
+-rw-r--r-- 1 runner runner  78905 Sep  5 20:49 arch-gala.jpg
+-rw-r--r-- 1 runner runner 135837 Sep  5 20:49 arch-newyork-1976.jpg
+-rw-r--r-- 1 runner runner  34810 Sep  5 20:49 libro-copertina.jpg
+-rw-r--r-- 1 runner runner  91873 Sep  5 20:49 salone.jpg
+-rw-r--r-- 1 runner runner  26120 Sep  5 20:49 vincenzo-2026.jpg
+-rw-r--r-- 1 runner runner  26512 Sep  5 20:49 vincenzo-premiazione.jpg
+-rw-r--r-- 1 runner runner  93333 Sep  5 20:49 work-acconciatura.jpg
+-rw-r--r-- 1 runner runner  48604 Sep  5 20:49 work-balayage.jpg
+-rw-r--r-- 1 runner runner  80173 Sep  5 20:49 work-blonde.jpg
+-rw-r--r-- 1 runner runner  68503 Sep  5 20:49 work-colore.jpg
+-rw-r--r-- 1 runner runner  78055 Sep  5 20:49 work-gal04.jpg
+-rw-r--r-- 1 runner runner 105221 Sep  5 20:49 work-gal09.jpg
+-rw-r--r-- 1 runner runner  86571 Sep  5 20:49 work-onde.jpg
+-rw-r--r-- 1 runner runner  49858 Sep  5 20:49 work-rosso.jpg
+-rw-r--r-- 1 runner runner  62530 Sep  5 20:49 work-skinfade.jpg
+-rw-r--r-- 1 runner runner  95095 Sep  5 20:49 work-taglio.jpg
+-rw-r--r-- 1 runner runner  45352 Sep  5 20:49 work-volume.jpg
+-rw-r--r-- 1 runner runner 104006 Sep  5 20:49 work-waves.jpg
 + echo '--- done ---'
 --- done ---
