@@ -1,5 +1,5 @@
 + date -u
-Sat Sep  5 23:34:40 UTC 2026
+Sat Sep  5 23:51:38 UTC 2026
 + echo '--- unpack bootstrap ---'
 --- unpack bootstrap ---
 + '[' -d bootstrap ']'
@@ -8,10 +8,10 @@ no bootstrap dir
 + echo '--- patches ---'
 --- patches ---
 + for f in tools/patches/*.py
-+ '[' -e tools/patches/009-foto-salone.py ']'
-+ python3 tools/patches/009-foto-salone.py
-sources.json: aggiunte 12 voci -> sal-raffaele-lavoro, sal-poltrone, sal-uomo, sal-uomo-wide, sal-donna, sal-donna-postazioni, sal-donna-lavoro, sal-lavaggio, sal-rituale, sal-barba, sal-riccio, sal-taglio-uomo
-+ rm tools/patches/009-foto-salone.py
++ '[' -e 'tools/patches/*.py' ']'
++ echo 'no patches'
+no patches
++ break
 + echo '--- images ---'
 --- images ---
 + pip install --quiet pillow
@@ -38,18 +38,18 @@ keep  work-volume
 keep  vincenzo-2026
 keep  raffaele
 keep  raffaele-papa-francesco
-built sal-raffaele-lavoro (1200, 750) 173 KB
-built sal-poltrone (1200, 750) 152 KB
-built sal-uomo (1200, 750) 184 KB
-built sal-uomo-wide (1000, 625) 112 KB
-built sal-donna (1200, 750) 206 KB
-built sal-donna-postazioni (1000, 625) 110 KB
-built sal-donna-lavoro (1000, 625) 109 KB
-built sal-lavaggio (1000, 625) 101 KB
-built sal-rituale (1200, 750) 122 KB
-built sal-barba (1000, 625) 95 KB
-built sal-riccio (1000, 625) 72 KB
-built sal-taglio-uomo (1000, 625) 92 KB
+keep  sal-raffaele-lavoro
+keep  sal-poltrone
+keep  sal-uomo
+keep  sal-uomo-wide
+keep  sal-donna
+keep  sal-donna-postazioni
+keep  sal-donna-lavoro
+keep  sal-lavaggio
+keep  sal-rituale
+keep  sal-barba
+keep  sal-riccio
+keep  sal-taglio-uomo
 + echo '--- prune gallery cells whose image is missing ---'
 --- prune gallery cells whose image is missing ---
 + python3 -
@@ -58,41 +58,41 @@ all gallery images present
 --- final ---
 + ls -la img
 total 3176
-drwxr-xr-x 2 runner runner   4096 Sep  5 23:34 .
-drwxr-xr-x 6 runner runner   4096 Sep  5 23:34 ..
--rw-r--r-- 1 runner runner  66782 Sep  5 23:34 arch-1970s-medaglie.jpg
--rw-r--r-- 1 runner runner  76209 Sep  5 23:34 arch-evian-1974.jpg
--rw-r--r-- 1 runner runner  78905 Sep  5 23:34 arch-gala.jpg
--rw-r--r-- 1 runner runner 135837 Sep  5 23:34 arch-newyork-1976.jpg
--rw-r--r-- 1 runner runner  53463 Sep  5 23:34 libro-copertina.jpg
--rw-r--r-- 1 runner runner  52333 Sep  5 23:34 raffaele-papa-francesco.jpg
--rw-r--r-- 1 runner runner  49297 Sep  5 23:34 raffaele.jpg
--rw-r--r-- 1 runner runner  97334 Sep  5 23:34 sal-barba.jpg
--rw-r--r-- 1 runner runner 111674 Sep  5 23:34 sal-donna-lavoro.jpg
--rw-r--r-- 1 runner runner 113294 Sep  5 23:34 sal-donna-postazioni.jpg
--rw-r--r-- 1 runner runner 211333 Sep  5 23:34 sal-donna.jpg
--rw-r--r-- 1 runner runner 103806 Sep  5 23:34 sal-lavaggio.jpg
--rw-r--r-- 1 runner runner 156616 Sep  5 23:34 sal-poltrone.jpg
--rw-r--r-- 1 runner runner 177420 Sep  5 23:34 sal-raffaele-lavoro.jpg
--rw-r--r-- 1 runner runner  74632 Sep  5 23:34 sal-riccio.jpg
--rw-r--r-- 1 runner runner 125279 Sep  5 23:34 sal-rituale.jpg
--rw-r--r-- 1 runner runner  94516 Sep  5 23:34 sal-taglio-uomo.jpg
--rw-r--r-- 1 runner runner 115068 Sep  5 23:34 sal-uomo-wide.jpg
--rw-r--r-- 1 runner runner 188877 Sep  5 23:34 sal-uomo.jpg
--rw-r--r-- 1 runner runner  91873 Sep  5 23:34 salone.jpg
--rw-r--r-- 1 runner runner  26120 Sep  5 23:34 vincenzo-2026.jpg
--rw-r--r-- 1 runner runner  40023 Sep  5 23:34 vincenzo-premiazione.jpg
--rw-r--r-- 1 runner runner  93333 Sep  5 23:34 work-acconciatura.jpg
--rw-r--r-- 1 runner runner  48604 Sep  5 23:34 work-balayage.jpg
--rw-r--r-- 1 runner runner  80173 Sep  5 23:34 work-blonde.jpg
--rw-r--r-- 1 runner runner  68503 Sep  5 23:34 work-colore.jpg
--rw-r--r-- 1 runner runner  78055 Sep  5 23:34 work-gal04.jpg
--rw-r--r-- 1 runner runner 105221 Sep  5 23:34 work-gal09.jpg
--rw-r--r-- 1 runner runner  86571 Sep  5 23:34 work-onde.jpg
--rw-r--r-- 1 runner runner  49858 Sep  5 23:34 work-rosso.jpg
--rw-r--r-- 1 runner runner  62530 Sep  5 23:34 work-skinfade.jpg
--rw-r--r-- 1 runner runner  95095 Sep  5 23:34 work-taglio.jpg
--rw-r--r-- 1 runner runner  45352 Sep  5 23:34 work-volume.jpg
--rw-r--r-- 1 runner runner 104006 Sep  5 23:34 work-waves.jpg
+drwxr-xr-x 2 runner runner   4096 Sep  5 23:51 .
+drwxr-xr-x 6 runner runner   4096 Sep  5 23:51 ..
+-rw-r--r-- 1 runner runner  66782 Sep  5 23:51 arch-1970s-medaglie.jpg
+-rw-r--r-- 1 runner runner  76209 Sep  5 23:51 arch-evian-1974.jpg
+-rw-r--r-- 1 runner runner  78905 Sep  5 23:51 arch-gala.jpg
+-rw-r--r-- 1 runner runner 135837 Sep  5 23:51 arch-newyork-1976.jpg
+-rw-r--r-- 1 runner runner  53463 Sep  5 23:51 libro-copertina.jpg
+-rw-r--r-- 1 runner runner  52333 Sep  5 23:51 raffaele-papa-francesco.jpg
+-rw-r--r-- 1 runner runner  49297 Sep  5 23:51 raffaele.jpg
+-rw-r--r-- 1 runner runner  97334 Sep  5 23:51 sal-barba.jpg
+-rw-r--r-- 1 runner runner 111674 Sep  5 23:51 sal-donna-lavoro.jpg
+-rw-r--r-- 1 runner runner 113294 Sep  5 23:51 sal-donna-postazioni.jpg
+-rw-r--r-- 1 runner runner 211333 Sep  5 23:51 sal-donna.jpg
+-rw-r--r-- 1 runner runner 103806 Sep  5 23:51 sal-lavaggio.jpg
+-rw-r--r-- 1 runner runner 156616 Sep  5 23:51 sal-poltrone.jpg
+-rw-r--r-- 1 runner runner 177420 Sep  5 23:51 sal-raffaele-lavoro.jpg
+-rw-r--r-- 1 runner runner  74632 Sep  5 23:51 sal-riccio.jpg
+-rw-r--r-- 1 runner runner 125279 Sep  5 23:51 sal-rituale.jpg
+-rw-r--r-- 1 runner runner  94516 Sep  5 23:51 sal-taglio-uomo.jpg
+-rw-r--r-- 1 runner runner 115068 Sep  5 23:51 sal-uomo-wide.jpg
+-rw-r--r-- 1 runner runner 188877 Sep  5 23:51 sal-uomo.jpg
+-rw-r--r-- 1 runner runner  91873 Sep  5 23:51 salone.jpg
+-rw-r--r-- 1 runner runner  26120 Sep  5 23:51 vincenzo-2026.jpg
+-rw-r--r-- 1 runner runner  40023 Sep  5 23:51 vincenzo-premiazione.jpg
+-rw-r--r-- 1 runner runner  93333 Sep  5 23:51 work-acconciatura.jpg
+-rw-r--r-- 1 runner runner  48604 Sep  5 23:51 work-balayage.jpg
+-rw-r--r-- 1 runner runner  80173 Sep  5 23:51 work-blonde.jpg
+-rw-r--r-- 1 runner runner  68503 Sep  5 23:51 work-colore.jpg
+-rw-r--r-- 1 runner runner  78055 Sep  5 23:51 work-gal04.jpg
+-rw-r--r-- 1 runner runner 105221 Sep  5 23:51 work-gal09.jpg
+-rw-r--r-- 1 runner runner  86571 Sep  5 23:51 work-onde.jpg
+-rw-r--r-- 1 runner runner  49858 Sep  5 23:51 work-rosso.jpg
+-rw-r--r-- 1 runner runner  62530 Sep  5 23:51 work-skinfade.jpg
+-rw-r--r-- 1 runner runner  95095 Sep  5 23:51 work-taglio.jpg
+-rw-r--r-- 1 runner runner  45352 Sep  5 23:51 work-volume.jpg
+-rw-r--r-- 1 runner runner 104006 Sep  5 23:51 work-waves.jpg
 + echo '--- done ---'
 --- done ---
