@@ -1,82 +1,79 @@
 + date -u
-Sat Sep  5 19:13:23 UTC 2026
+Sat Sep  5 19:16:56 UTC 2026
 + echo '--- unpack bootstrap ---'
 --- unpack bootstrap ---
 + '[' -d bootstrap ']'
-+ cat bootstrap/part-00.b64 bootstrap/part-01.b64 bootstrap/part-02.b64 bootstrap/part-03.b64 bootstrap/part-04.b64 bootstrap/part-05.b64 bootstrap/part-06.b64 bootstrap/part-07.b64 bootstrap/part-08.b64 bootstrap/part-09.b64 bootstrap/part-10.b64 bootstrap/part-11.b64 bootstrap/part-12.b64 bootstrap/part-13.b64 bootstrap/part-14.b64 bootstrap/part-15.b64
-+ base64 -d
-+ tar xz
-+ rm -rf bootstrap bootstrap.tgz.b64
++ echo 'no bootstrap dir'
+no bootstrap dir
 + ls -la
-total 96
-drwxr-xr-x 5 runner runner  4096 Sep  5 19:13 .
-drwxr-xr-x 3 runner runner  4096 Sep  5 19:13 ..
-drwxr-xr-x 7 runner runner  4096 Sep  5 19:13 .git
-drwxr-xr-x 3 runner runner  4096 Sep  5 19:13 .github
--rw-r--r-- 1 runner runner     0 Sep  5 18:03 .nojekyll
--rw-r--r-- 1 runner runner  1481 Sep  5 16:27 LEGGIMI.md
--rw-r--r-- 1 runner runner   961 Sep  5 18:01 README.md
--rw-r--r-- 1 runner runner   546 Sep  5 19:13 build-log.txt
--rw-r--r-- 1 runner runner 56562 Sep  5 18:03 index.html
--rw-r--r-- 1 runner runner    85 Sep  5 16:27 robots.txt
--rw-r--r-- 1 runner runner  2572 Sep  5 16:42 sitemap.xml
-drwxr-xr-x 3 runner runner  4096 Sep  5 19:13 tools
+total 100
+drwxr-xr-x 6 runner runner  4096 Sep  5 19:16 .
+drwxr-xr-x 3 runner runner  4096 Sep  5 19:16 ..
+drwxr-xr-x 7 runner runner  4096 Sep  5 19:16 .git
+drwxr-xr-x 3 runner runner  4096 Sep  5 19:16 .github
+-rw-r--r-- 1 runner runner     0 Sep  5 19:16 .nojekyll
+-rw-r--r-- 1 runner runner  1481 Sep  5 19:16 LEGGIMI.md
+-rw-r--r-- 1 runner runner   964 Sep  5 19:16 README.md
+-rw-r--r-- 1 runner runner   173 Sep  5 19:16 build-log.txt
+drwxr-xr-x 2 runner runner  4096 Sep  5 19:16 img
+-rw-r--r-- 1 runner runner 56620 Sep  5 19:16 index.html
+-rw-r--r-- 1 runner runner    85 Sep  5 19:16 robots.txt
+-rw-r--r-- 1 runner runner  2572 Sep  5 19:16 sitemap.xml
+drwxr-xr-x 2 runner runner  4096 Sep  5 19:16 tools
 + echo '--- patches ---'
 --- patches ---
 + for f in tools/patches/*.py
-+ '[' -e tools/patches/001-russo23.py ']'
-+ python3 tools/patches/001-russo23.py
-renamed to Russo 23
-+ rm tools/patches/001-russo23.py
++ '[' -e 'tools/patches/*.py' ']'
++ echo 'no patches'
+no patches
++ break
 + echo '--- images ---'
 --- images ---
 + pip install --quiet pillow
 + python3 tools/build_images.py
-FAIL  work-onde <urlopen error [Errno 111] Connection refused>
-Failed: ['work-onde']
-built arch-1970s-medaglie (724, 516) 65 KB
-built arch-newyork-1976 (1000, 750) 132 KB
-built arch-gala (800, 573) 77 KB
-built arch-evian-1974 (800, 549) 74 KB
-built libro-copertina (488, 325) 33 KB
-built vincenzo-premiazione (488, 252) 25 KB
-built salone (1000, 723) 89 KB
-built work-waves (714, 780) 101 KB
-built work-taglio (696, 800) 92 KB
-built work-colore (606, 800) 66 KB
-built work-acconciatura (640, 800) 91 KB
-built work-skinfade (700, 933) 61 KB
-built work-balayage (700, 933) 47 KB
-built work-blonde (700, 933) 78 KB
-built work-gal04 (700, 933) 76 KB
-built work-gal09 (700, 933) 102 KB
-built work-rosso (512, 640) 48 KB
-built work-volume (512, 640) 44 KB
-built vincenzo-2026 (269, 612) 25 KB
-+ echo 'SOME IMAGES FAILED'
-SOME IMAGES FAILED
+keep  arch-1970s-medaglie
+keep  arch-newyork-1976
+keep  arch-gala
+keep  arch-evian-1974
+keep  libro-copertina
+keep  vincenzo-premiazione
+keep  salone
+keep  work-waves
+keep  work-taglio
+keep  work-colore
+keep  work-acconciatura
+keep  work-skinfade
+keep  work-balayage
+built work-onde (700, 933) 84 KB
+keep  work-blonde
+keep  work-gal04
+keep  work-gal09
+keep  work-rosso
+keep  work-volume
+keep  vincenzo-2026
 + ls -la img
-total 1388
-drwxr-xr-x 2 runner runner   4096 Sep  5 19:15 .
-drwxr-xr-x 6 runner runner   4096 Sep  5 19:13 ..
--rw-r--r-- 1 runner runner  66782 Sep  5 19:13 arch-1970s-medaglie.jpg
--rw-r--r-- 1 runner runner  76209 Sep  5 19:13 arch-evian-1974.jpg
--rw-r--r-- 1 runner runner  78905 Sep  5 19:13 arch-gala.jpg
--rw-r--r-- 1 runner runner 135837 Sep  5 19:13 arch-newyork-1976.jpg
--rw-r--r-- 1 runner runner  34810 Sep  5 19:13 libro-copertina.jpg
--rw-r--r-- 1 runner runner  91873 Sep  5 19:13 salone.jpg
--rw-r--r-- 1 runner runner  26120 Sep  5 19:15 vincenzo-2026.jpg
--rw-r--r-- 1 runner runner  26512 Sep  5 19:13 vincenzo-premiazione.jpg
--rw-r--r-- 1 runner runner  93333 Sep  5 19:13 work-acconciatura.jpg
--rw-r--r-- 1 runner runner  48604 Sep  5 19:13 work-balayage.jpg
--rw-r--r-- 1 runner runner  80173 Sep  5 19:15 work-blonde.jpg
--rw-r--r-- 1 runner runner  68503 Sep  5 19:13 work-colore.jpg
--rw-r--r-- 1 runner runner  78055 Sep  5 19:15 work-gal04.jpg
--rw-r--r-- 1 runner runner 105221 Sep  5 19:15 work-gal09.jpg
--rw-r--r-- 1 runner runner  49858 Sep  5 19:15 work-rosso.jpg
--rw-r--r-- 1 runner runner  62530 Sep  5 19:13 work-skinfade.jpg
--rw-r--r-- 1 runner runner  95095 Sep  5 19:13 work-taglio.jpg
--rw-r--r-- 1 runner runner  45352 Sep  5 19:15 work-volume.jpg
--rw-r--r-- 1 runner runner 104006 Sep  5 19:13 work-waves.jpg
+total 1476
+drwxr-xr-x 2 runner runner   4096 Sep  5 19:17 .
+drwxr-xr-x 6 runner runner   4096 Sep  5 19:16 ..
+-rw-r--r-- 1 runner runner  66782 Sep  5 19:16 arch-1970s-medaglie.jpg
+-rw-r--r-- 1 runner runner  76209 Sep  5 19:16 arch-evian-1974.jpg
+-rw-r--r-- 1 runner runner  78905 Sep  5 19:16 arch-gala.jpg
+-rw-r--r-- 1 runner runner 135837 Sep  5 19:16 arch-newyork-1976.jpg
+-rw-r--r-- 1 runner runner  34810 Sep  5 19:16 libro-copertina.jpg
+-rw-r--r-- 1 runner runner  91873 Sep  5 19:16 salone.jpg
+-rw-r--r-- 1 runner runner  26120 Sep  5 19:16 vincenzo-2026.jpg
+-rw-r--r-- 1 runner runner  26512 Sep  5 19:16 vincenzo-premiazione.jpg
+-rw-r--r-- 1 runner runner  93333 Sep  5 19:16 work-acconciatura.jpg
+-rw-r--r-- 1 runner runner  48604 Sep  5 19:16 work-balayage.jpg
+-rw-r--r-- 1 runner runner  80173 Sep  5 19:16 work-blonde.jpg
+-rw-r--r-- 1 runner runner  68503 Sep  5 19:16 work-colore.jpg
+-rw-r--r-- 1 runner runner  78055 Sep  5 19:16 work-gal04.jpg
+-rw-r--r-- 1 runner runner 105221 Sep  5 19:16 work-gal09.jpg
+-rw-r--r-- 1 runner runner  86571 Sep  5 19:17 work-onde.jpg
+-rw-r--r-- 1 runner runner  49858 Sep  5 19:16 work-rosso.jpg
+-rw-r--r-- 1 runner runner  62530 Sep  5 19:16 work-skinfade.jpg
+-rw-r--r-- 1 runner runner  95095 Sep  5 19:16 work-taglio.jpg
+-rw-r--r-- 1 runner runner  45352 Sep  5 19:16 work-volume.jpg
+-rw-r--r-- 1 runner runner 104006 Sep  5 19:16 work-waves.jpg
 + echo '--- done ---'
 --- done ---
