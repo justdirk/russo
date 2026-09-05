@@ -1,4 +1,4 @@
-name: Build and deploy to GitHub Pages
+name: Build site files
 
 on:
   push:
@@ -7,12 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   build:
@@ -20,60 +14,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Unpack bootstrap bundle (first run only)
-        id: boot
+      - name: Unpack bootstrap bundle
         run: |
           if [ -d bootstrap ]; then
             cat bootstrap/part-*.b64 | base64 -d | tar xz
-            git rm -rq bootstrap
-            [ -f bootstrap.tgz.b64 ] && git rm -q bootstrap.tgz.b64 || true
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            rm -rf bootstrap bootstrap.tgz.b64
+            echo "unpacked:"; ls -la
+          else
+            echo "no bootstrap dir; already unpacked"
           fi
 
-      - name: Apply one-off patches (then remove them)
-        id: patches
+      - name: Apply one-off patches
         run: |
           if ls tools/patches/*.py >/dev/null 2>&1; then
-            for f in tools/patches/*.py; do python3 "$f"; git rm -q "$f"; done
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            for f in tools/patches/*.py; do python3 "$f" && rm "$f"; done
+          else
+            echo "no patches"
           fi
 
-      - name: Build any missing photos from their public sources
-        id: photos
+      - name: Build photos from their public sources
         run: |
           pip install --quiet pillow
           python3 tools/build_images.py
-          if [ -n "$(git status --porcelain img)" ]; then echo "changed=true" >> "$GITHUB_OUTPUT"; fi
+          ls -la img
 
-      - name: Commit unpacked files, patches and built photos back to main
-        if: steps.boot.outputs.changed == 'true' || steps.patches.outputs.changed == 'true' || steps.photos.outputs.changed == 'true'
+      - name: Commit results back to main
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Unpack site files, apply patches, add built photos [skip ci]"
-          git push
-
-      - name: Assemble site
-        run: |
-          mkdir -p _site
-          cp -r index.html robots.txt sitemap.xml .nojekyll img _site/
-          [ -f CNAME ] && cp CNAME _site/ || true
-
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          git diff --staged --quiet && echo "nothing to commit" || (git commit -m "Build site files [skip ci]" && git push)
