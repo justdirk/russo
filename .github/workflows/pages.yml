@@ -14,31 +14,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Unpack bootstrap bundle
+      - name: Build everything (never fails; logs to build-log.txt)
+        continue-on-error: true
         run: |
+          exec > >(tee build-log.txt) 2>&1
+          set -x
+          date -u
+          echo "--- unpack bootstrap ---"
           if [ -d bootstrap ]; then
-            cat bootstrap/part-*.b64 | base64 -d | tar xz
+            cat bootstrap/part-*.b64 | base64 -d | tar xz || echo "UNPACK FAILED"
             rm -rf bootstrap bootstrap.tgz.b64
-            echo "unpacked:"; ls -la
           else
-            echo "no bootstrap dir; already unpacked"
+            echo "no bootstrap dir"
           fi
+          ls -la
+          echo "--- patches ---"
+          for f in tools/patches/*.py; do
+            [ -e "$f" ] || { echo "no patches"; break; }
+            python3 "$f" && rm "$f" || echo "PATCH FAILED: $f"
+          done
+          echo "--- images ---"
+          pip install --quiet pillow || echo "PILLOW INSTALL FAILED"
+          python3 tools/build_images.py || echo "SOME IMAGES FAILED"
+          ls -la img || echo "no img dir"
+          echo "--- done ---"
 
-      - name: Apply one-off patches
-        run: |
-          if ls tools/patches/*.py >/dev/null 2>&1; then
-            for f in tools/patches/*.py; do python3 "$f" && rm "$f"; done
-          else
-            echo "no patches"
-          fi
-
-      - name: Build photos from their public sources
-        run: |
-          pip install --quiet pillow
-          python3 tools/build_images.py
-          ls -la img
-
-      - name: Commit results back to main
+      - name: Commit whatever we have
+        if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
