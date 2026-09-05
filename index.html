@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400;1,6..96,700&family=Archivo:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&display=swap">
 
 <style>
 /* ============ TOKENS — dark-first: the shop after hours, mirror-lit ============ */
@@ -27,7 +27,8 @@
   --text:#ECE8DF; --text-dim:#9A9AA4; --rule:#2A2A33; --rule-soft:#1E1E26;
   --brass:#C0985A; --brass-dim:#6E5729; --sangue:#8E2430;
   --btn-ink:#0E0E12; --shadow:rgba(0,0,0,.6); --glow:rgba(192,152,90,.12);
-  --f-display:"Bodoni Moda","Didot","Bodoni MT",Georgia,serif;
+  --f-display:"Instrument Serif","Times New Roman",Georgia,serif;
+  --f-num:"Archivo","Helvetica Neue",Arial,sans-serif;
   --f-body:"Archivo","Helvetica Neue",Arial,sans-serif;
   --maxw:1280px; --gutter:clamp(20px,4vw,56px);
   --ease:cubic-bezier(.22,1,.36,1); --ease-io:cubic-bezier(.65,0,.35,1);
@@ -86,8 +87,8 @@ header.nav::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1p
 header.nav.scrolled{background:color-mix(in srgb,var(--ink) 72%,transparent);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2)}
 header.nav.scrolled::after{opacity:1}
 .nav-in{max-width:var(--maxw);margin:0 auto;padding:16px var(--gutter);display:flex;align-items:center;gap:22px}
-.mark{font-family:var(--f-display);font-weight:900;font-size:18px;letter-spacing:.09em;line-height:1.1;white-space:nowrap;text-decoration:none}
-.mark .mk2{font-weight:400;font-style:italic;color:var(--brass)}
+.mark{font-family:var(--f-display);font-weight:400;font-size:21px;letter-spacing:.07em;line-height:1.1;white-space:nowrap;text-decoration:none}
+.mark .mk2{font-style:italic;color:var(--brass)}
 .mark small{display:block;font-family:var(--f-body);font-weight:600;font-size:8.5px;letter-spacing:.24em;color:var(--brass);margin-top:2px}
 nav.links{display:flex;gap:26px;margin-left:auto;font-size:13px;letter-spacing:.04em}
 nav.links a{text-decoration:none;color:var(--text-dim);position:relative;padding:4px 0;transition:color .2s}
@@ -128,15 +129,15 @@ nav.links a:hover::after{right:0}
 .eyebrow{font-size:11.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--text-dim);margin-bottom:26px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;row-gap:6px}
 .eyebrow::before{content:"";width:34px;height:1px;background:var(--brass)}
 .eyebrow b{color:var(--brass);font-weight:600}
-h1.word{font-family:var(--f-display);font-weight:900;font-size:clamp(72px,13.6vw,214px);line-height:.82;letter-spacing:-.03em;margin:0 0 0 -.04em}
-h1.word .num{font-weight:400;font-style:italic;color:var(--brass);letter-spacing:-.02em}
+h1.word{font-family:var(--f-display);font-weight:400;font-size:clamp(84px,15.2vw,240px);line-height:.84;letter-spacing:-.02em;margin:0 0 0 -.03em}
+h1.word .num{font-style:italic;color:var(--brass);letter-spacing:-.01em}
 .hero-sub{font-family:var(--f-display);font-size:clamp(22px,2.4vw,36px);font-weight:400;font-style:italic;letter-spacing:.01em;color:var(--text);line-height:1.2;max-width:22ch}
 .hero-side{display:grid;gap:22px;padding-bottom:10px}
 .deck{max-width:42ch;font-size:16.5px;line-height:1.65;color:var(--text)}
-.deck em{font-family:var(--f-display);font-style:italic;font-weight:700;font-size:1.08em}
+.deck em{font-family:var(--f-display);font-style:italic;font-weight:400;font-size:1.08em}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
 .proof{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--text-dim)}
-.proof b{font-family:var(--f-display);font-size:30px;color:var(--text);font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
+.proof b{font-family:var(--f-display);font-size:30px;color:var(--text);font-weight:400;font-variant-numeric:tabular-nums;line-height:1}
 .proof .st{color:var(--brass);letter-spacing:.1em;font-size:12px}
 .hero-cap{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-dim);line-height:1.6}
 .hero-cap b{color:var(--brass);font-weight:600}
@@ -161,18 +162,18 @@ h1.word .num{font-weight:400;font-style:italic;color:var(--brass);letter-spacing
 /* ============ MARQUEE ============ */
 .marq{border-block:1px solid var(--rule-soft);overflow:hidden;padding:18px 0;background:var(--ink)}
 .marq-track{display:flex;width:max-content;animation:marq 60s linear infinite}
-.marq span{font-family:var(--f-display);font-style:italic;font-size:22px;padding:0 34px;color:var(--text-dim);white-space:nowrap;position:relative}
+.marq span{font-family:var(--f-display);font-style:italic;font-size:25px;padding:0 34px;color:var(--text-dim);white-space:nowrap;position:relative}
 .marq span::after{content:"";position:absolute;right:-3px;top:50%;width:5px;height:5px;border-radius:50%;background:var(--brass);transform:translateY(-50%)}
 @keyframes marq{to{transform:translateX(-50%)}}
 
 /* ============ MANIFESTO ============ */
 .manifesto{padding:clamp(80px,12vw,150px) 0 clamp(60px,8vw,110px)}
-.manifesto .big{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,4.4vw,62px);line-height:1.12;letter-spacing:-.012em;max-width:22ch}
+.manifesto .big{font-family:var(--f-display);font-weight:400;font-size:clamp(32px,4.8vw,68px);line-height:1.08;letter-spacing:-.012em;max-width:22ch}
 .manifesto .big i{color:var(--brass)}
 .creds{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:clamp(56px,7vw,96px);border-top:1px solid var(--rule)}
 .cred{padding:30px 26px 34px 0;border-right:1px solid var(--rule-soft)}
 .cred:last-child{border-right:0}
-.cred b{display:block;font-family:var(--f-display);font-weight:700;font-size:clamp(26px,2.6vw,38px);line-height:1.05;margin:16px 0 10px;letter-spacing:-.01em}
+.cred b{display:block;font-family:var(--f-display);font-weight:400;font-size:clamp(30px,3vw,44px);line-height:1.05;margin:16px 0 10px;letter-spacing:-.01em}
 .cred span{font-size:13.5px;color:var(--text-dim);line-height:1.5;display:block}
 .cred .label{display:flex;align-items:center;gap:10px}
 .cred .label::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brass)}
@@ -182,7 +183,7 @@ h1.word .num{font-weight:400;font-style:italic;color:var(--brass);letter-spacing
 /* ============ SECTIONS ============ */
 section{position:relative;padding:clamp(72px,10vw,140px) 0}
 .sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:clamp(40px,5vw,72px)}
-.sec-head h2{font-family:var(--f-display);font-weight:700;font-size:clamp(40px,5.6vw,84px);line-height:.98;letter-spacing:-.022em}
+.sec-head h2{font-family:var(--f-display);font-weight:400;font-size:clamp(44px,6.2vw,94px);line-height:.96;letter-spacing:-.015em}
 .sec-head h2 i{font-weight:400;color:var(--brass)}
 .sec-head .num{font-family:var(--f-display);font-weight:400;font-style:italic;font-size:14px;color:var(--brass);letter-spacing:.06em;display:inline-block;margin-right:14px;vertical-align:.4em}
 .sec-intro{color:var(--text-dim);font-size:17px;max-width:46ch;line-height:1.65}
@@ -262,18 +263,18 @@ dialog.lb[open]{display:grid;place-items:center}
 .feature{position:relative;margin:0 auto clamp(64px,8vw,120px);max-width:1100px}
 .feature .frame img{width:100%;height:auto}
 .feature figcaption{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;padding:16px 0 0;font-size:13px;color:var(--text-dim)}
-.feature figcaption b{font-family:var(--f-display);color:var(--brass);font-size:20px;font-weight:700;font-style:italic}
+.feature figcaption b{font-family:var(--f-display);color:var(--brass);font-size:20px;font-weight:400;font-style:italic}
 .chapters{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,6vw,110px);align-items:start}
 .pin{position:sticky;top:18vh;height:64vh;display:flex;flex-direction:column;justify-content:center}
-.pin .year{font-family:var(--f-display);font-weight:900;font-size:clamp(110px,15vw,250px);line-height:.85;letter-spacing:-.04em;color:var(--text);position:relative;font-variant-numeric:tabular-nums;display:grid}
+.pin .year{font-family:var(--f-display);font-weight:400;font-size:clamp(120px,16vw,270px);line-height:.85;letter-spacing:-.03em;color:var(--text);position:relative;font-variant-numeric:tabular-nums;display:grid}
 .pin .year span{grid-area:1/1;transition:opacity .5s var(--ease),transform .6s var(--ease);opacity:0;transform:translateY(24px)}
 .pin .year span.on{opacity:1;transform:none}
 .pin .rule{width:60px;height:2px;background:var(--brass);margin:28px 0 18px}
 .pin .sub{font-family:var(--f-display);font-style:italic;font-size:clamp(18px,1.6vw,24px);color:var(--text-dim);max-width:24ch;min-height:2.6em;transition:opacity .4s}
 .ch{padding:11vh 0;border-top:1px solid var(--rule-soft)}
 .ch:first-child{border-top:0;padding-top:4vh}
-.ch .y{display:none;font-family:var(--f-display);font-weight:900;font-size:56px;line-height:1;color:var(--brass);margin-bottom:14px}
-.ch h3{font-family:var(--f-display);font-weight:700;font-size:clamp(26px,2.6vw,38px);line-height:1.12;letter-spacing:-.012em;margin-bottom:16px}
+.ch .y{display:none;font-family:var(--f-display);font-weight:400;font-size:64px;line-height:1;color:var(--brass);margin-bottom:14px}
+.ch h3{font-family:var(--f-display);font-weight:400;font-size:clamp(26px,2.6vw,38px);line-height:1.12;letter-spacing:-.012em;margin-bottom:16px}
 .ch p{color:var(--text-dim);font-size:17.5px;max-width:52ch;line-height:1.65}
 .ch figure.ph{margin-top:30px}
 .ch .pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:30px}
@@ -288,7 +289,7 @@ dialog.lb[open]{display:grid;place-items:center}
 /* quote */
 .quote{margin-top:clamp(70px,9vw,130px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(220px,.7fr);gap:clamp(36px,6vw,90px);align-items:center}
 .quote blockquote{margin:0}
-.quote blockquote p{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,4vw,58px);line-height:1.12;letter-spacing:-.012em}
+.quote blockquote p{font-family:var(--f-display);font-weight:400;font-size:clamp(32px,4.4vw,64px);line-height:1.08;letter-spacing:-.012em}
 .quote blockquote p::before{content:"“";color:var(--brass);margin-right:.05em}
 .quote blockquote p::after{content:"”";color:var(--brass)}
 .quote footer{margin-top:26px;font-size:13px;color:var(--text-dim);letter-spacing:.04em}
@@ -306,7 +307,7 @@ dialog.lb[open]{display:grid;place-items:center}
 .cover::before{content:"";position:absolute;top:1%;bottom:1%;left:-22px;width:24px;background:linear-gradient(to right,#5a1620,#8E2430 40%,#6c1a25);transform:rotateY(-90deg) translateX(-12px);transform-origin:right;border-radius:2px 0 0 2px}
 .cover::after{content:"";position:absolute;inset:0;border-radius:2px 6px 6px 2px;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.18) 48%,transparent 56%);mix-blend-mode:screen;opacity:.7;pointer-events:none}
 .book3d:hover .cover{transform:rotateY(-8deg) rotateX(1deg) translateY(-6px)}
-.book h3{font-family:var(--f-display);font-weight:700;font-size:clamp(32px,3.6vw,52px);line-height:1.08;letter-spacing:-.015em;margin-bottom:18px}
+.book h3{font-family:var(--f-display);font-weight:400;font-size:clamp(36px,4vw,58px);line-height:1.08;letter-spacing:-.015em;margin-bottom:18px}
 .book h3 span{color:var(--brass);font-style:italic;font-weight:400;display:block;font-size:.62em;margin-top:8px;line-height:1.2}
 .meta{display:flex;flex-wrap:wrap;gap:10px 30px;margin:26px 0 30px;font-size:13px;color:var(--text-dim);font-variant-numeric:tabular-nums;border-top:1px solid var(--rule-soft);padding-top:18px}
 .meta div b{color:var(--text);font-weight:600;display:block;font-size:15px}
@@ -321,8 +322,8 @@ dialog.lb[open]{display:grid;place-items:center}
 .row:hover{padding-left:12px}
 .row .nm{font-weight:500;font-size:18px;letter-spacing:-.005em}
 .row .nm small{display:block;font-weight:400;font-size:13.5px;color:var(--text-dim);margin-top:3px;letter-spacing:0}
-.row .pr{font-family:var(--f-display);font-weight:700;font-size:28px;font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:-.01em}
-.row .pr small{font-size:.6em;font-weight:400;color:var(--text-dim);margin-right:2px;vertical-align:.25em}
+.row .pr{font-family:var(--f-num);font-weight:600;font-size:24px;font-variant-numeric:tabular-nums;white-space:nowrap;letter-spacing:-.03em}
+.row .pr small{font-size:.62em;font-weight:400;color:var(--text-dim);margin-right:3px;vertical-align:.2em}
 .row.hi .pr{color:var(--brass)}
 .tagnew{font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--btn-ink);background:var(--brass);padding:3px 7px;border-radius:999px;vertical-align:middle;margin-left:10px;position:relative;top:-2px}
 .also{margin-top:38px;font-size:15px;color:var(--text-dim);max-width:70ch;line-height:1.65}
@@ -331,8 +332,8 @@ dialog.lb[open]{display:grid;place-items:center}
 
 /* ============ RECENSIONI ============ */
 .stars{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
-.bigno{font-family:var(--f-display);font-weight:900;font-size:clamp(90px,12vw,170px);line-height:.85;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
-.bigno small{font-size:.28em;font-weight:400;font-style:italic;color:var(--brass);letter-spacing:0}
+.bigno{font-family:var(--f-num);font-weight:700;font-size:clamp(90px,12vw,170px);line-height:.85;font-variant-numeric:tabular-nums;letter-spacing:-.05em}
+.bigno small{font-family:var(--f-display);font-size:.32em;font-weight:400;font-style:italic;color:var(--brass);letter-spacing:0;margin-left:.06em}
 .revs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3vw,40px);margin-top:clamp(44px,5vw,70px)}
 .rev{border-top:1px solid var(--rule);padding-top:22px}
 .rev p{font-family:var(--f-display);font-style:italic;font-size:clamp(20px,1.8vw,25px);line-height:1.35}
@@ -377,7 +378,7 @@ dialog.lb[open]{display:grid;place-items:center}
 /* ============ FOOTER ============ */
 footer.foot{padding:clamp(60px,8vw,110px) 0 48px;border-top:1px solid var(--rule-soft);overflow:hidden}
 .foot-in{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
-.foot-word{font-family:var(--f-display);font-weight:900;font-size:clamp(70px,14vw,220px);line-height:.8;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1px var(--rule);text-stroke:1px var(--rule);margin:0 0 40px -.04em;user-select:none;transition:color 1s var(--ease)}
+.foot-word{font-family:var(--f-display);font-weight:400;font-size:clamp(70px,15vw,240px);line-height:.8;letter-spacing:-.02em;color:transparent;-webkit-text-stroke:1px var(--rule);text-stroke:1px var(--rule);margin:0 0 40px -.04em;user-select:none;transition:color 1s var(--ease)}
 .foot-word:hover{color:var(--brass);-webkit-text-stroke-color:var(--brass)}
 .foot-row{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;font-size:13px;color:var(--text-dim)}
 .foot-links{display:flex;gap:22px}
@@ -471,7 +472,7 @@ footer.foot{padding:clamp(60px,8vw,110px) 0 48px;border-top:1px solid var(--rule
     <div class="creds">
       <div class="cred rv"><div class="label"><span data-it>Qualifica</span><span data-en>Qualification</span></div><b><span data-it>Maestro d'arte</span><span data-en>Maestro d'arte</span></b><span data-it>Accademia A.N.A.M., maschile e femminile</span><span data-en>A.N.A.M. Academy, men's &amp; women's</span></div>
       <div class="cred rv d1"><div class="label"><span data-it>Insegnamento</span><span data-en>Teaching</span></div><b><span data-it>Docente e formatore</span><span data-en>Instructor &amp; trainer</span></b><span data-it>Ha formato altri professionisti del mestiere</span><span data-en>Has trained other professionals in the trade</span></div>
-      <div class="cred rv d2"><div class="label"><span data-it>Recensioni</span><span data-en>Reviews</span></div><b>4,8 / 5</b><span data-it>Su 353 recensioni verificate su Treatwell</span><span data-en>Across 353 verified Treatwell reviews</span></div>
+      <div class="cred rv d2"><div class="label"><span data-it>Recensioni</span><span data-en>Reviews</span></div><b style="font-family:var(--f-num);font-weight:700;letter-spacing:-.03em;font-size:clamp(26px,2.6vw,38px)">4,8 / 5</b><span data-it>Su 353 recensioni verificate su Treatwell</span><span data-en>Across 353 verified Treatwell reviews</span></div>
       <div class="cred rv d3"><div class="label"><span data-it>La scuola</span><span data-en>The school</span></div><b><span data-it>Figlio d'arte</span><span data-en>Born to the trade</span></b><span data-it>Di Vincenzo Russo, campione del mondo</span><span data-en>Son of Vincenzo Russo, world champion</span></div>
     </div>
   </div>
