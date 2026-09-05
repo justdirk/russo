@@ -27,7 +27,6 @@ jobs:
           else
             echo "no bootstrap dir"
           fi
-          ls -la
           echo "--- patches ---"
           for f in tools/patches/*.py; do
             [ -e "$f" ] || { echo "no patches"; break; }
@@ -36,6 +35,24 @@ jobs:
           echo "--- images ---"
           pip install --quiet pillow || echo "PILLOW INSTALL FAILED"
           python3 tools/build_images.py || echo "SOME IMAGES FAILED"
+          echo "--- prune gallery cells whose image is missing ---"
+          python3 - <<'PY'
+          import os, re
+          s = open('index.html', encoding='utf-8').read()
+          pat = re.compile(r'\s*<a href="#prenota"><img src="img/([a-z0-9-]+)\.jpg".*?</a>', re.S)
+          dropped = []
+          def keep(m):
+              if os.path.exists('img/%s.jpg' % m.group(1)):
+                  return m.group(0)
+              dropped.append(m.group(1)); return ''
+          s2 = pat.sub(keep, s)
+          if dropped:
+              open('index.html', 'w', encoding='utf-8').write(s2)
+              print('dropped gallery cells:', dropped)
+          else:
+              print('all gallery images present')
+          PY
+          echo "--- final ---"
           ls -la img || echo "no img dir"
           echo "--- done ---"
 
