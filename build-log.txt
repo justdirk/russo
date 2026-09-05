@@ -1,5 +1,5 @@
 + date -u
-Sat Sep  5 21:14:56 UTC 2026
+Sat Sep  5 21:20:10 UTC 2026
 + echo '--- unpack bootstrap ---'
 --- unpack bootstrap ---
 + '[' -d bootstrap ']'
@@ -8,14 +8,33 @@ no bootstrap dir
 + echo '--- patches ---'
 --- patches ---
 + for f in tools/patches/*.py
-+ '[' -e 'tools/patches/*.py' ']'
-+ echo 'no patches'
-no patches
-+ break
++ '[' -e tools/patches/003-images.py ']'
++ python3 tools/patches/003-images.py
+Traceback (most recent call last):
+  File "/home/runner/work/russo/russo/tools/patches/003-images.py", line 19, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/russo/russo/tools/patches/003-images.py", line 22, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
++ echo 'PATCH FAILED: tools/patches/003-images.py'
+PATCH FAILED: tools/patches/003-images.py
++ for f in tools/patches/*.py
++ '[' -e tools/patches/004-index.py ']'
++ python3 tools/patches/004-index.py
+index.html patched; sha256 OK
++ rm tools/patches/004-index.py
 + echo '--- images ---'
 --- images ---
 + pip install --quiet pillow
 + python3 tools/build_images.py
+FAIL  raffaele HTTP Error 404: Not Found
+FAIL  raffaele-papa-francesco HTTP Error 404: Not Found
+Failed: ['raffaele', 'raffaele-papa-francesco']
 keep  arch-1970s-medaglie
 keep  arch-newyork-1976
 keep  arch-gala
@@ -36,6 +55,8 @@ keep  work-gal09
 keep  work-rosso
 keep  work-volume
 keep  vincenzo-2026
++ echo 'SOME IMAGES FAILED'
+SOME IMAGES FAILED
 + echo '--- prune gallery cells whose image is missing ---'
 --- prune gallery cells whose image is missing ---
 + python3 -
@@ -44,27 +65,27 @@ all gallery images present
 --- final ---
 + ls -la img
 total 1476
-drwxr-xr-x 2 runner runner   4096 Sep  5 21:14 .
-drwxr-xr-x 6 runner runner   4096 Sep  5 21:14 ..
--rw-r--r-- 1 runner runner  66782 Sep  5 21:14 arch-1970s-medaglie.jpg
--rw-r--r-- 1 runner runner  76209 Sep  5 21:14 arch-evian-1974.jpg
--rw-r--r-- 1 runner runner  78905 Sep  5 21:14 arch-gala.jpg
--rw-r--r-- 1 runner runner 135837 Sep  5 21:14 arch-newyork-1976.jpg
--rw-r--r-- 1 runner runner  34810 Sep  5 21:14 libro-copertina.jpg
--rw-r--r-- 1 runner runner  91873 Sep  5 21:14 salone.jpg
--rw-r--r-- 1 runner runner  26120 Sep  5 21:14 vincenzo-2026.jpg
--rw-r--r-- 1 runner runner  26512 Sep  5 21:14 vincenzo-premiazione.jpg
--rw-r--r-- 1 runner runner  93333 Sep  5 21:14 work-acconciatura.jpg
--rw-r--r-- 1 runner runner  48604 Sep  5 21:14 work-balayage.jpg
--rw-r--r-- 1 runner runner  80173 Sep  5 21:14 work-blonde.jpg
--rw-r--r-- 1 runner runner  68503 Sep  5 21:14 work-colore.jpg
--rw-r--r-- 1 runner runner  78055 Sep  5 21:14 work-gal04.jpg
--rw-r--r-- 1 runner runner 105221 Sep  5 21:14 work-gal09.jpg
--rw-r--r-- 1 runner runner  86571 Sep  5 21:14 work-onde.jpg
--rw-r--r-- 1 runner runner  49858 Sep  5 21:14 work-rosso.jpg
--rw-r--r-- 1 runner runner  62530 Sep  5 21:14 work-skinfade.jpg
--rw-r--r-- 1 runner runner  95095 Sep  5 21:14 work-taglio.jpg
--rw-r--r-- 1 runner runner  45352 Sep  5 21:14 work-volume.jpg
--rw-r--r-- 1 runner runner 104006 Sep  5 21:14 work-waves.jpg
+drwxr-xr-x 2 runner runner   4096 Sep  5 21:20 .
+drwxr-xr-x 6 runner runner   4096 Sep  5 21:20 ..
+-rw-r--r-- 1 runner runner  66782 Sep  5 21:20 arch-1970s-medaglie.jpg
+-rw-r--r-- 1 runner runner  76209 Sep  5 21:20 arch-evian-1974.jpg
+-rw-r--r-- 1 runner runner  78905 Sep  5 21:20 arch-gala.jpg
+-rw-r--r-- 1 runner runner 135837 Sep  5 21:20 arch-newyork-1976.jpg
+-rw-r--r-- 1 runner runner  34810 Sep  5 21:20 libro-copertina.jpg
+-rw-r--r-- 1 runner runner  91873 Sep  5 21:20 salone.jpg
+-rw-r--r-- 1 runner runner  26120 Sep  5 21:20 vincenzo-2026.jpg
+-rw-r--r-- 1 runner runner  26512 Sep  5 21:20 vincenzo-premiazione.jpg
+-rw-r--r-- 1 runner runner  93333 Sep  5 21:20 work-acconciatura.jpg
+-rw-r--r-- 1 runner runner  48604 Sep  5 21:20 work-balayage.jpg
+-rw-r--r-- 1 runner runner  80173 Sep  5 21:20 work-blonde.jpg
+-rw-r--r-- 1 runner runner  68503 Sep  5 21:20 work-colore.jpg
+-rw-r--r-- 1 runner runner  78055 Sep  5 21:20 work-gal04.jpg
+-rw-r--r-- 1 runner runner 105221 Sep  5 21:20 work-gal09.jpg
+-rw-r--r-- 1 runner runner  86571 Sep  5 21:20 work-onde.jpg
+-rw-r--r-- 1 runner runner  49858 Sep  5 21:20 work-rosso.jpg
+-rw-r--r-- 1 runner runner  62530 Sep  5 21:20 work-skinfade.jpg
+-rw-r--r-- 1 runner runner  95095 Sep  5 21:20 work-taglio.jpg
+-rw-r--r-- 1 runner runner  45352 Sep  5 21:20 work-volume.jpg
+-rw-r--r-- 1 runner runner 104006 Sep  5 21:20 work-waves.jpg
 + echo '--- done ---'
 --- done ---

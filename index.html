@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Russo 23 — Parrucchiere e Barbiere a Milano, via Meda 23</title>
 <meta name="description" content="Raffaele Russo, maestro d'arte A.N.A.M., parrucchiere uomo e donna e barbiere in via Giuseppe Meda 23 a Milano (Navigli–Tibaldi) dal 1998. Taglio a forbice e rasoio, colore, balayage. 4,8/5 su 353 recensioni. Prenota online.">
-<link rel="canonical" href="https://www.bellicapellibyrussomilano.it/">
+<link rel="canonical" href="https://justdirk.github.io/russo/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#131318">
 <meta property="og:type" content="business.business">
@@ -13,8 +13,8 @@
 <meta property="og:site_name" content="Russo 23 · Milano">
 <meta property="og:title" content="Russo 23 — Parrucchiere e Barbiere a Milano, via Meda 23">
 <meta property="og:description" content="Raffaele Russo, maestro d'arte A.N.A.M., in via Meda dal 1998. Figlio di Vincenzo Russo, campione del mondo di acconciatura maschile. Prenota online.">
-<meta property="og:image" content="https://www.bellicapellibyrussomilano.it/img/arch-1970s-medaglie.jpg">
-<meta property="og:url" content="https://www.bellicapellibyrussomilano.it/">
+<meta property="og:image" content="https://justdirk.github.io/russo/img/arch-1970s-medaglie.jpg">
+<meta property="og:url" content="https://justdirk.github.io/russo/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,14 +97,14 @@ h1.word .sm{display:block;font-size:.48em;font-weight:400;font-style:italic;lett
 .proof{display:flex;align-items:center;gap:14px;margin-top:22px;font-size:13.5px;color:var(--text-dim)}
 .proof b{font-family:var(--f-display);font-size:22px;color:var(--text);font-weight:700;font-variant-numeric:tabular-nums}
 .proof .st{color:var(--brass);letter-spacing:.08em}
-.hero-band{margin:0 0 0;position:relative;aspect-ratio:2.2/1;overflow:hidden;border:1px solid var(--rule);border-bottom:0}
-.hero-band img{width:100%;height:100%;object-fit:cover;object-position:50% 32%}
+.hero-band{margin:0 0 0;position:relative;aspect-ratio:1.75/1;overflow:hidden;border:1px solid var(--rule);border-bottom:0;background:var(--ink-sunk)}
+.hero-band img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
 .hero-band::after{content:"";position:absolute;inset:auto 0 0 0;height:46%;background:linear-gradient(to top,rgba(19,19,24,.78),transparent);pointer-events:none}
 .hero-band figcaption{position:absolute;left:22px;right:22px;bottom:20px;display:flex;flex-wrap:wrap;gap:10px 22px;align-items:baseline;color:#E8E5DD;font-size:13px;line-height:1.45;text-shadow:0 1px 2px rgba(0,0,0,.6)}
 .hero-band figcaption b{font-family:var(--f-display);font-size:24px;font-weight:700;color:var(--brass)}
 @media(max-width:900px){
   .hero-copy{grid-template-columns:1fr;gap:22px;padding:40px 0 34px}
-  .hero-band{aspect-ratio:16/10;margin:0 -28px;border-left:0;border-right:0}
+  .hero-band{aspect-ratio:1.5/1;margin:0 -28px;border-left:0;border-right:0}
   .hero-band figcaption{left:18px;right:18px;bottom:14px;font-size:12px}
   .hero-band figcaption b{font-size:20px}
 }
@@ -139,14 +139,17 @@ h2 i{font-weight:400;color:var(--brass)}
 .two{display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:start}
 @media(max-width:900px){ .two{grid-template-columns:1fr;gap:36px} }
 figure.ph{margin:0}
-figure.ph img{width:100%;height:auto;border:1px solid var(--rule)}
+figure.ph img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.mini{display:grid;grid-template-columns:1fr 1.8fr;gap:12px;margin-top:14px;align-items:start}
+.mini figcaption{font-size:11.5px;line-height:1.4}
+.mini figcaption b{font-size:11.5px}
 figure.ph figcaption{margin-top:10px;font-size:12.5px;color:var(--text-dim);line-height:1.5}
 figure.ph figcaption b{color:var(--brass);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:10.5px;display:block;margin-bottom:3px}
 
 /* gallery */
 .gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .gal a{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;border:1px solid var(--rule);background:var(--ink-sunk)}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.gal img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
 .gal a:hover img{transform:scale(1.035)}
 .gal .tag{position:absolute;left:12px;top:12px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#E8E5DD;background:rgba(19,19,24,.7);padding:5px 8px;border-left:2px solid var(--brass)}
 .gal .wide{grid-column:span 2;aspect-ratio:auto}
@@ -154,8 +157,8 @@ figure.ph figcaption b{color:var(--brass);font-weight:600;letter-spacing:.06em;t
 @media (prefers-reduced-motion:reduce){ .gal img{transition:none} }
 
 /* heritage */
-.feature{position:relative;margin-bottom:56px;border:1px solid var(--rule)}
-.feature img{width:100%;height:auto;max-height:640px;object-fit:cover;object-position:center 35%}
+.feature{position:relative;margin:0 auto 56px;max-width:1000px;border:1px solid var(--rule)}
+.feature img{width:100%;height:auto;display:block}
 .feature figcaption{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;padding:14px 18px;border-top:1px solid var(--rule);font-size:13px;color:var(--text-dim);background:var(--ink-raised)}
 .feature figcaption b{font-family:var(--f-display);color:var(--brass);font-size:20px;font-weight:700}
 .tl-item{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:0 40px;padding:22px 0;border-top:1px solid var(--rule-soft)}
@@ -164,7 +167,7 @@ figure.ph figcaption b{color:var(--brass);font-weight:600;letter-spacing:.06em;t
 .tl-body h3{font-size:19px;font-weight:600;margin-bottom:5px}
 .tl-body p{color:var(--text-dim);max-width:62ch;font-size:16px}
 @media(max-width:820px){ .tl-item{grid-template-columns:1fr;gap:6px} .yr{font-size:24px} }
-.arch3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+.arch3{display:grid;grid-template-columns:1.46fr 1.4fr 1.04fr;gap:18px;margin-top:56px;align-items:start}
 @media(max-width:800px){ .arch3{grid-template-columns:1fr} }
 .quote{padding:70px 0 0}
 blockquote{margin:0;max-width:22ch}
@@ -328,10 +331,22 @@ footer.foot{padding:40px 0 48px;font-size:13px;color:var(--text-dim)}
           <a class="btn" href="https://bellicapellibyrusso.mytreatwell.it/" target="_blank" rel="noopener"><span data-it>Prenota con Raffaele</span><span data-en>Book with Raffaele</span></a>
         </div>
       </div>
-      <figure class="ph">
-        <img src="img/salone.jpg" width="1000" height="723" loading="lazy" decoding="async" alt="L'interno del salone Belli Capelli di Raffaele Russo in via Giuseppe Meda 23 a Milano: specchi, postazioni e lavaggi">
-        <figcaption><b><span data-it>Il salone</span><span data-en>The salon</span></b><span data-it>Via Giuseppe Meda 23 — sei postazioni, un solo maestro.</span><span data-en>Via Giuseppe Meda 23 — six chairs, one master.</span></figcaption>
-      </figure>
+      <div>
+        <figure class="ph">
+          <img src="img/salone.jpg" width="1000" height="723" loading="lazy" decoding="async" alt="L'interno del salone Belli Capelli di Raffaele Russo in via Giuseppe Meda 23 a Milano: specchi, postazioni e lavaggi">
+          <figcaption><b><span data-it>Il salone</span><span data-en>The salon</span></b><span data-it>Via Giuseppe Meda 23 — sei postazioni, un solo maestro.</span><span data-en>Via Giuseppe Meda 23 — six chairs, one master.</span></figcaption>
+        </figure>
+        <div class="mini">
+          <figure class="ph">
+            <img src="img/raffaele.jpg" width="560" height="700" loading="lazy" decoding="async" alt="Raffaele Russo, parrucchiere e maestro d'arte, nel suo salone Belli Capelli in via Meda 23 a Milano">
+            <figcaption><b>Raffaele Russo</b><span data-it>In salone, 2026.</span><span data-en>In the salon, 2026.</span></figcaption>
+          </figure>
+          <figure class="ph">
+            <img src="img/raffaele-papa-francesco.jpg" width="840" height="580" loading="lazy" decoding="async" alt="Raffaele Russo in abito scuro stringe la mano a Papa Francesco durante un'udienza">
+            <figcaption><b><span data-it>Con Papa Francesco</span><span data-en>With Pope Francis</span></b><span data-it>Raffaele ricevuto in udienza.</span><span data-en>Raffaele received in audience.</span></figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -388,7 +403,7 @@ footer.foot{padding:40px 0 48px;font-size:13px;color:var(--text-dim)}
     <div class="arch3">
       <figure class="ph"><img src="img/arch-evian-1974.jpg" width="800" height="549" loading="lazy" decoding="async" alt="Evian 1974: esultanza di Fregni, Russo e Andretta con il vincitore Turli al campionato di acconciatura"><figcaption><b>Evian, 1974</b><span data-it>L'esultanza di Fregni, Russo e Andretta con il vincitore Turli.</span><span data-en>Fregni, Russo and Andretta celebrating with the winner, Turli.</span></figcaption></figure>
       <figure class="ph"><img src="img/arch-gala.jpg" width="800" height="573" loading="lazy" decoding="async" alt="Gran Galà dell'acconciatura anni Settanta: Silvio Fregni con la signora e Vincenzo Russo al tavolo"><figcaption><b><span data-it>Il Gran Galà</span><span data-en>The Gran Galà</span></b><span data-it>Silvio Fregni e signora, e Russo, a una serata dell'Accademia.</span><span data-en>Silvio Fregni and his wife, and Russo, at an Academy evening.</span></figcaption></figure>
-      <figure class="ph"><img src="img/vincenzo-premiazione.jpg" width="488" height="252" loading="lazy" decoding="async" alt="Vincenzo Russo da giovane, in abito scuro con lo scudetto tricolore della nazionale, stringe la mano a una premiazione di gara"><figcaption><b>Vincenzo Russo</b><span data-it>Premiato in gara, con lo scudetto tricolore sul petto. La fotografia di copertina del suo libro.</span><span data-en>Congratulated on the competition floor, the tricolour badge on his chest. The cover photograph of his book.</span></figcaption></figure>
+      <figure class="ph"><img src="img/vincenzo-premiazione.jpg" width="536" height="515" loading="lazy" decoding="async" alt="Vincenzo Russo da giovane, in abito scuro con lo scudetto tricolore della nazionale, stringe la mano a una premiazione di gara"><figcaption><b>Vincenzo Russo</b><span data-it>Premiato in gara, con lo scudetto tricolore sul petto. La fotografia di copertina del suo libro.</span><span data-en>Congratulated on the competition floor, the tricolour badge on his chest. The cover photograph of his book.</span></figcaption></figure>
     </div>
 
     <div class="quote">
@@ -412,7 +427,7 @@ footer.foot{padding:40px 0 48px;font-size:13px;color:var(--text-dim)}
   <div class="wrap">
     <div class="book">
       <figure class="ph">
-        <img src="img/libro-copertina.jpg" width="488" height="325" loading="lazy" decoding="async" alt="Copertina del libro Le mani tra i capelli di Vincenzo Russo, Edizioni Insieme 2018">
+        <img src="img/libro-copertina.jpg" width="536" height="793" loading="lazy" decoding="async" alt="Copertina del libro Le mani tra i capelli di Vincenzo Russo, Edizioni Insieme 2018">
         <figcaption><b>Ed. Insieme, 2018</b></figcaption>
       </figure>
       <div>
@@ -549,18 +564,18 @@ footer.foot{padding:40px 0 48px;font-size:13px;color:var(--text-dim)}
   "@graph":[
     {
       "@type":"HairSalon",
-      "@id":"https://www.bellicapellibyrussomilano.it/#salon",
+      "@id":"https://justdirk.github.io/russo/#salon",
       "name":"Russo 23",
       "alternateName":["Russo Parrucchieri","Belli Capelli by Russo","Bellicapelli di Russo Raffaele","Raffaele Russo parrucchiere Milano"],
       "description":"Parrucchiere uomo e donna e barbiere a Milano, via Giuseppe Meda 23 (zona Navigli–Tibaldi), dal 1998. Raffaele Russo, maestro d'arte A.N.A.M., figlio del campione del mondo Vincenzo Russo.",
-      "url":"https://www.bellicapellibyrussomilano.it/",
-      "image":"https://www.bellicapellibyrussomilano.it/img/arch-1970s-medaglie.jpg",
+      "url":"https://justdirk.github.io/russo/",
+      "image":"https://justdirk.github.io/russo/img/arch-1970s-medaglie.jpg",
       "telephone":"+39 02 8942 0560",
       "email":"bellicapellimi@hotmail.it",
       "priceRange":"€€",
       "currenciesAccepted":"EUR",
       "foundingDate":"1998",
-      "founder":{"@id":"https://www.bellicapellibyrussomilano.it/#raffaele"},
+      "founder":{"@id":"https://justdirk.github.io/russo/#raffaele"},
       "address":{"@type":"PostalAddress","streetAddress":"Via Giuseppe Meda 23","postalCode":"20141","addressLocality":"Milano","addressRegion":"MI","addressCountry":"IT"},
       "areaServed":["Milano","Navigli","Porta Genova","Tibaldi","Porta Romana"],
       "knowsLanguage":["it","en"],
@@ -579,14 +594,15 @@ footer.foot{padding:40px 0 48px;font-size:13px;color:var(--text-dim)}
       ]}
     },
     {
-      "@type":"Person","@id":"https://www.bellicapellibyrussomilano.it/#raffaele",
+      "@type":"Person","@id":"https://justdirk.github.io/russo/#raffaele",
       "name":"Raffaele Russo","jobTitle":"Parrucchiere e barbiere, maestro d'arte A.N.A.M.",
-      "worksFor":{"@id":"https://www.bellicapellibyrussomilano.it/#salon"},
+      "image":"https://justdirk.github.io/russo/img/raffaele.jpg",
+      "worksFor":{"@id":"https://justdirk.github.io/russo/#salon"},
       "alumniOf":{"@type":"Organization","name":"Accademia Nazionale Acconciatori Misti (A.N.A.M.)"},
-      "parent":{"@id":"https://www.bellicapellibyrussomilano.it/#vincenzo"}
+      "parent":{"@id":"https://justdirk.github.io/russo/#vincenzo"}
     },
     {
-      "@type":"Person","@id":"https://www.bellicapellibyrussomilano.it/#vincenzo",
+      "@type":"Person","@id":"https://justdirk.github.io/russo/#vincenzo",
       "name":"Vincenzo Russo","birthDate":"1938-01-26","deathDate":"2026-05-09","birthPlace":"Cerignola, Italia",
       "jobTitle":"Barbiere, campione del mondo di acconciatura maschile",
       "award":["Campione del mondo di acconciatura maschile","Ambrogino d'Oro"],
@@ -594,7 +610,7 @@ footer.foot{padding:40px 0 48px;font-size:13px;color:var(--text-dim)}
     },
     {
       "@type":"Book","name":"Le mani tra i capelli e un taglio scolpito a rasoio per la vittoria mondiale",
-      "author":{"@id":"https://www.bellicapellibyrussomilano.it/#vincenzo"},
+      "author":{"@id":"https://justdirk.github.io/russo/#vincenzo"},
       "isbn":"9788876022715","publisher":{"@type":"Organization","name":"Ed. Insieme"},"datePublished":"2018","numberOfPages":"176","inLanguage":"it",
       "offers":{"@type":"Offer","price":"15.00","priceCurrency":"EUR","url":"https://www.ibs.it/mani-tra-capelli-taglio-scolpito-libro-vincenzo-russo/e/9788876022715"}
     },
