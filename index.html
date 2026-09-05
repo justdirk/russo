@@ -113,11 +113,12 @@ nav.links a:hover::after{right:0}
 /* ============ HERO — full bleed, the archive breathing behind the name ============ */
 .hero{position:relative;min-height:100svh;display:grid;align-items:end;overflow:hidden;isolation:isolate}
 .hero-media{position:absolute;inset:0;z-index:-2;overflow:hidden}
-.hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 0;transform-origin:50% 0;will-change:transform}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:56% 14%;transform-origin:50% 0;will-change:transform;filter:brightness(.7) contrast(1.06) saturate(.84)}
 .hero-media::after{content:"";position:absolute;inset:0;background:
-  linear-gradient(to bottom,color-mix(in srgb,var(--ink) 62%,transparent) 0%,transparent 24%),
-  linear-gradient(to top,var(--ink) 0%,color-mix(in srgb,var(--ink) 82%,transparent) 26%,color-mix(in srgb,var(--ink) 20%,transparent) 62%,transparent 100%),
-  linear-gradient(to right,color-mix(in srgb,var(--ink) 55%,transparent),transparent 55%)}
+  linear-gradient(to bottom,color-mix(in srgb,var(--ink) 72%,transparent) 0%,color-mix(in srgb,var(--ink) 24%,transparent) 26%,transparent 40%),
+  linear-gradient(to top,var(--ink) 0%,color-mix(in srgb,var(--ink) 88%,transparent) 26%,color-mix(in srgb,var(--ink) 46%,transparent) 62%,color-mix(in srgb,var(--ink) 22%,transparent) 100%),
+  radial-gradient(120% 90% at 22% 62%,color-mix(in srgb,var(--ink) 78%,transparent) 0%,transparent 62%),
+  linear-gradient(to right,color-mix(in srgb,var(--ink) 62%,transparent),transparent 58%)}
 @supports (animation-timeline: scroll()){
   .hero-media img{animation:heroDrift linear both;animation-timeline:scroll(root);animation-range:0 120vh}
   @keyframes heroDrift{to{transform:translateY(22%) scale(1.14)}}
@@ -226,6 +227,9 @@ figure.ph figcaption b{color:var(--brass);font-weight:600;letter-spacing:.14em;t
 .card .im{position:relative;overflow:hidden;aspect-ratio:3/4;background:var(--ink-sunk)}
 .card.sq .im{aspect-ratio:4/5}
 .card.tall .im{aspect-ratio:2/3}
+.card.wide{width:clamp(300px,36vw,480px)}
+.card.wide .im{aspect-ratio:3/2}
+.card.wide img{object-position:50% 50%}
 .card:nth-child(3n+2){margin-top:44px}
 .card:nth-child(3n+3){margin-top:18px}
 .card img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;transition:transform .9s var(--ease),filter .9s var(--ease);filter:saturate(.92)}
@@ -432,7 +436,7 @@ footer.foot{padding:clamp(60px,8vw,110px) 0 48px;border-top:1px solid var(--rule
 <main id="top">
 <section class="hero" aria-label="Russo 23">
   <div class="hero-media">
-    <img class="up" src="img/arch-1970s-medaglie.jpg" width="724" height="516" alt="Anni Settanta: il giurato Vincenzo Russo, padre di Raffaele, in smoking con lo scudetto tricolore dell'Accademia A.N.A.M. accanto al campione Filiberto Turli con la medaglia" fetchpriority="high">
+    <img class="up" src="img/sal-raffaele-lavoro.jpg" width="1200" height="750" alt="Raffaele Russo, forbici e pettine in mano, taglia i capelli a un cliente nella sala uomo del salone di via Giuseppe Meda 23 a Milano, sotto i diplomi dell'Accademia A.N.A.M." fetchpriority="high">
   </div>
   <div class="hero-copy">
     <div class="title">
@@ -449,8 +453,8 @@ footer.foot{padding:clamp(60px,8vw,110px) 0 48px;border-top:1px solid var(--rule
         <a class="btn" href="https://bellicapellibyrusso.mytreatwell.it/" target="_blank" rel="noopener"><span data-it>Prenota un appuntamento</span><span data-en>Book an appointment</span> <span class="ar">→</span></a>
         <a class="btn ghost" href="tel:+390289420560">02 8942 0560</a>
       </div>
-      <div class="proof up a4"><b>4,8</b><span class="st">★★★★★</span><span><span data-it>353 recensioni verificate</span><span data-en>353 verified reviews</span></span></div>
-      <div class="hero-cap up a4"><b><span data-it>Nella foto</span><span data-en>In the picture</span></b> — <span data-it>anni '70: Vincenzo Russo, giurato A.N.A.M., con il campione Turli</span><span data-en>1970s: Vincenzo Russo, A.N.A.M. juror, with champion Turli</span></div>
+      <div class="proof up a4"><b>4,8</b><span class="st">★★★★★</span><span><span data-it>353 recensioni verificate su Treatwell</span><span data-en>353 verified Treatwell reviews</span></span></div>
+      <div class="hero-cap up a4"><b><span data-it>Nella foto</span><span data-en>In the picture</span></b> — <span data-it>Raffaele Russo al lavoro, sala uomo, via Meda 23</span><span data-en>Raffaele Russo at work, the men's room, via Meda 23</span></div>
     </div>
   </div>
   <div class="scroll-cue up a4"><i></i><span data-it>Scorri</span><span data-en>Scroll</span></div>
@@ -495,7 +499,7 @@ footer.foot{padding:clamp(60px,8vw,110px) 0 48px;border-top:1px solid var(--rule
       </div>
       <div class="sticky">
         <figure class="ph clip">
-          <div class="frame"><img src="img/salone.jpg" width="1000" height="723" loading="lazy" decoding="async" alt="L'interno del salone Belli Capelli di Raffaele Russo in via Giuseppe Meda 23 a Milano: specchi, postazioni e lavaggi"></div>
+          <div class="frame"><img src="img/sal-uomo.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="La sala uomo del salone di Raffaele Russo in via Giuseppe Meda 23 a Milano: poltrone da barbiere, specchi e la vetrina con la scritta Belli Capelli Uomo"></div>
           <figcaption><b><span data-it>Il salone</span><span data-en>The salon</span></b><span data-it>Via Giuseppe Meda 23 — sei postazioni, un solo maestro.</span><span data-en>Via Giuseppe Meda 23 — six chairs, one master.</span></figcaption>
         </figure>
         <div class="mini">
@@ -522,18 +526,20 @@ footer.foot{padding:clamp(60px,8vw,110px) 0 48px;border-top:1px solid var(--rule
   </div>
   <div class="strip-wrap">
     <div class="strip" id="strip" aria-label="Galleria dei lavori">
-      <button class="card tall" data-cap="Uomo · Skin fade"><div class="im"><img src="img/work-skinfade.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Taglio uomo skin fade con sfumatura alta, salone Raffaele Russo Milano"><span class="tag">Uomo</span></div><div class="cap"><span data-it>Skin fade a rasoio</span><span data-en>Razor skin fade</span><i>01</i></div></button>
-      <button class="card" data-cap="Colore · Balayage"><div class="im"><img src="img/work-onde.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Balayage caldo su capelli lunghi mossi, parrucchiere donna Milano via Meda"><span class="tag">Colore</span></div><div class="cap"><span data-it>Balayage caldo</span><span data-en>Warm balayage</span><i>02</i></div></button>
-      <button class="card sq" data-cap="Uomo · Ciuffo texturizzato"><div class="im"><img src="img/work-gal09.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Taglio uomo con ciuffo texturizzato e lati sfumati, barbiere Milano Navigli"><span class="tag">Uomo</span></div><div class="cap"><span data-it>Ciuffo texturizzato</span><span data-en>Textured fringe</span><i>03</i></div></button>
-      <button class="card" data-cap="Donna · Taglio contemporaneo"><div class="im"><img src="img/work-taglio.jpg" width="696" height="800" loading="lazy" decoding="async" alt="Taglio contemporaneo medio con onde e schiariture, Belli Capelli Milano"><span class="tag">Donna</span></div><div class="cap"><span data-it>Taglio medio con onde</span><span data-en>Mid-length cut with waves</span><i>04</i></div></button>
-      <button class="card tall" data-cap="Colore · Creativo"><div class="im"><img src="img/work-colore.jpg" width="606" height="800" loading="lazy" decoding="async" alt="Colorazione creativa viola e rosso su capelli lisci lunghi"><span class="tag">Colore</span></div><div class="cap"><span data-it>Colore creativo</span><span data-en>Creative colour</span><i>05</i></div></button>
-      <button class="card sq" data-cap="Piega · Onde"><div class="im"><img src="img/work-blonde.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Onde morbide su capelli biondi lunghi, piega in salone a Milano"><span class="tag">Piega</span></div><div class="cap"><span data-it>Onde morbide</span><span data-en>Soft waves</span><i>06</i></div></button>
-      <button class="card" data-cap="Bambino"><div class="im"><img src="img/work-gal04.jpg" width="416" height="556" loading="lazy" decoding="async" alt="Taglio bambino con sfumatura e ciuffo, barbiere per bambini Milano"><span class="tag">Bambino</span></div><div class="cap"><span data-it>Taglio bambino</span><span data-en>Children's cut</span><i>07</i></div></button>
-      <button class="card tall" data-cap="Donna · Acconciatura"><div class="im"><img src="img/work-acconciatura.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Acconciatura da sera con onde naturali e schiariture caramello"><span class="tag">Donna</span></div><div class="cap"><span data-it>Acconciatura da sera</span><span data-en>Evening styling</span><i>08</i></div></button>
-      <button class="card sq" data-cap="Colore · Balayage naturale"><div class="im"><img src="img/work-balayage.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Balayage naturale su capelli lunghi castani, risultato in salone"><span class="tag">Colore</span></div><div class="cap"><span data-it>Balayage naturale</span><span data-en>Natural balayage</span><i>09</i></div></button>
-      <button class="card" data-cap="Colore · Rosso rame"><div class="im"><img src="img/work-rosso.jpg" width="512" height="640" loading="lazy" decoding="async" alt="Colore rosso rame intenso con boccoli morbidi, colorazione in salone a Milano"><span class="tag">Colore</span></div><div class="cap"><span data-it>Rosso rame</span><span data-en>Copper red</span><i>10</i></div></button>
-      <button class="card tall" data-cap="Piega · Volume"><div class="im"><img src="img/work-volume.jpg" width="512" height="640" loading="lazy" decoding="async" alt="Piega voluminosa con onde larghe su capelli castani lunghi"><span class="tag">Piega</span></div><div class="cap"><span data-it>Piega voluminosa</span><span data-en>Volume blow-dry</span><i>11</i></div></button>
-      <button class="card sq" data-cap="Donna · Biondo miele"><div class="im"><img src="img/work-waves.jpg" width="714" height="780" loading="lazy" decoding="async" alt="Onde biondo miele su capelli lunghi, taglio e piega donna via Meda Milano"><span class="tag">Donna</span></div><div class="cap"><span data-it>Biondo miele</span><span data-en>Honey blonde</span><i>12</i></div></button>
+      <button class="card wide" data-cap="Il salone · Uomo"><div class="im"><img src="img/sal-poltrone.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="Le poltrone da barbiere d'epoca sul pavimento a scacchi bianco e nero nella sala uomo del salone Russo in via Meda 23 a Milano"><span class="tag">Salone</span></div><div class="cap"><span data-it>Le poltrone</span><span data-en>The barber chairs</span><i>01</i></div></button>
+      <button class="card tall" data-cap="Uomo · Skin fade"><div class="im"><img src="img/work-skinfade.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Taglio uomo skin fade con sfumatura alta, salone Raffaele Russo Milano"><span class="tag">Uomo</span></div><div class="cap"><span data-it>Skin fade a rasoio</span><span data-en>Razor skin fade</span><i>02</i></div></button>
+      <button class="card wide" data-cap="Rituale · Cuoio capelluto"><div class="im"><img src="img/sal-rituale.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="Trattamento del cuoio capelluto: applicazione di una fiala sulla cute di una cliente sdraiata al lavaggio"><span class="tag">Rituale</span></div><div class="cap"><span data-it>Il rituale del cuoio capelluto</span><span data-en>The scalp ritual</span><i>03</i></div></button>
+      <button class="card" data-cap="Colore · Balayage"><div class="im"><img src="img/work-onde.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Balayage caldo su capelli lunghi mossi, parrucchiere donna Milano via Meda"><span class="tag">Colore</span></div><div class="cap"><span data-it>Balayage caldo</span><span data-en>Warm balayage</span><i>04</i></div></button>
+      <button class="card wide" data-cap="Barba · Rasatura"><div class="im"><img src="img/sal-barba.jpg" width="1000" height="625" loading="lazy" decoding="async" alt="Pennelli da barba in setola e rasoio di sicurezza sul ripiano della sala uomo"><span class="tag">Barba</span></div><div class="cap"><span data-it>Rasatura tradizionale</span><span data-en>Traditional shave</span><i>05</i></div></button>
+      <button class="card" data-cap="Donna · Taglio contemporaneo"><div class="im"><img src="img/work-taglio.jpg" width="696" height="800" loading="lazy" decoding="async" alt="Taglio contemporaneo medio con onde e schiariture, Belli Capelli Milano"><span class="tag">Donna</span></div><div class="cap"><span data-it>Taglio medio con onde</span><span data-en>Mid-length cut with waves</span><i>06</i></div></button>
+      <button class="card sq" data-cap="Uomo · Sfumatura alta"><div class="im"><img src="img/sal-taglio-uomo.jpg" width="1000" height="625" loading="lazy" decoding="async" alt="Nuca di un taglio uomo con sfumatura alta e ciuffo voluminoso, eseguito in salone"><span class="tag">Uomo</span></div><div class="cap"><span data-it>Sfumatura alta</span><span data-en>High fade</span><i>07</i></div></button>
+      <button class="card tall" data-cap="Colore · Creativo"><div class="im"><img src="img/work-colore.jpg" width="606" height="800" loading="lazy" decoding="async" alt="Colorazione creativa viola e rosso su capelli lisci lunghi"><span class="tag">Colore</span></div><div class="cap"><span data-it>Colore creativo</span><span data-en>Creative colour</span><i>08</i></div></button>
+      <button class="card wide" data-cap="Il salone · Donna"><div class="im"><img src="img/sal-donna.jpg" width="1200" height="750" loading="lazy" decoding="async" alt="La sala donna del salone vista dall'interno, con le vetrine e la scritta Belli Capelli Donna su via Meda"><span class="tag">Salone</span></div><div class="cap"><span data-it>La sala donna</span><span data-en>The women's room</span><i>09</i></div></button>
+      <button class="card sq" data-cap="Piega · Onde"><div class="im"><img src="img/work-blonde.jpg" width="675" height="900" loading="lazy" decoding="async" alt="Onde morbide su capelli biondi lunghi, piega in salone a Milano"><span class="tag">Piega</span></div><div class="cap"><span data-it>Onde morbide</span><span data-en>Soft waves</span><i>10</i></div></button>
+      <button class="card" data-cap="Donna · Ricci"><div class="im"><img src="img/sal-riccio.jpg" width="1000" height="625" loading="lazy" decoding="async" alt="Ritratto di una modella con capelli ricci castani voluminosi, lavoro del salone"><span class="tag">Donna</span></div><div class="cap"><span data-it>Ricci definiti</span><span data-en>Defined curls</span><i>11</i></div></button>
+      <button class="card tall" data-cap="Colore · Rosso rame"><div class="im"><img src="img/work-rosso.jpg" width="512" height="640" loading="lazy" decoding="async" alt="Colore rosso rame intenso con boccoli morbidi, colorazione in salone a Milano"><span class="tag">Colore</span></div><div class="cap"><span data-it>Rosso rame</span><span data-en>Copper red</span><i>12</i></div></button>
+      <button class="card wide" data-cap="Il salone · I lavaggi"><div class="im"><img src="img/sal-lavaggio.jpg" width="1000" height="625" loading="lazy" decoding="async" alt="Le postazioni di lavaggio con poltrone reclinabili e lavatesta bianchi sulla parete arancio"><span class="tag">Salone</span></div><div class="cap"><span data-it>I lavaggi</span><span data-en>The wash stations</span><i>13</i></div></button>
+      <button class="card sq" data-cap="Piega · Volume"><div class="im"><img src="img/work-volume.jpg" width="512" height="640" loading="lazy" decoding="async" alt="Piega voluminosa con onde larghe su capelli castani lunghi"><span class="tag">Piega</span></div><div class="cap"><span data-it>Piega voluminosa</span><span data-en>Volume blow-dry</span><i>14</i></div></button>
     </div>
   </div>
   <div class="wrap">
@@ -582,6 +588,7 @@ footer.foot{padding:clamp(60px,8vw,110px) 0 48px;border-top:1px solid var(--rule
         <article class="ch" data-year="1958" data-sub-it="La bottega «Figaro Liso»" data-sub-en="The «Figaro Liso» shop"><div class="y">1958</div><h3><span data-it>Bottega «Figaro Liso»</span><span data-en>The «Figaro Liso» shop</span></h3><p><span data-it>L'apprendistato comincia l'8 gennaio. Da qui nascono i negozi di via Gaetano Negri e Santa Maria Segreta, dove passeranno Montanelli, Pirelli, Moratti, Spadolini, Rivera.</span><span data-en>His apprenticeship begins on 8 January. His own shops on via Gaetano Negri and Santa Maria Segreta follow — where Montanelli, Pirelli, Moratti, Spadolini and Rivera will sit.</span></p></article>
         <article class="ch" data-year="1970" data-sub-it="Campione del mondo" data-sub-en="World champion"><div class="y">1970</div><h3><span data-it>Campione del mondo</span><span data-en>World champion</span></h3><p><span data-it>Il titolo mondiale di acconciatura maschile, con un taglio scolpito a rasoio — la tecnica che darà il titolo al suo libro.</span><span data-en>The world title in men's hairdressing, with a cut sculpted using a razor — the technique that later gave his book its title.</span></p>
           <figure class="ph clip"><div class="frame"><img src="img/vincenzo-premiazione.jpg" width="536" height="515" loading="lazy" decoding="async" alt="Vincenzo Russo da giovane, in abito scuro con lo scudetto tricolore della nazionale, stringe la mano a una premiazione di gara"></div><figcaption><b>Vincenzo Russo</b><span data-it>Premiato in gara, con lo scudetto tricolore sul petto. La fotografia di copertina del suo libro.</span><span data-en>Congratulated on the competition floor, the tricolour badge on his chest. The cover photograph of his book.</span></figcaption></figure>
+          <figure class="ph clip"><div class="frame"><img src="img/arch-1970s-medaglie.jpg" width="724" height="516" loading="lazy" decoding="async" alt="Anni Settanta: il giurato Vincenzo Russo, in smoking con lo scudetto tricolore dell'Accademia A.N.A.M., accanto al campione Filiberto Turli con la medaglia al collo"></div><figcaption><b><span data-it>Dietro le quinte</span><span data-en>Backstage</span></b><span data-it>Russo in smoking con lo scudetto A.N.A.M., accanto al campione Turli.</span><span data-en>Russo in black tie with the A.N.A.M. badge, beside the champion Turli.</span></figcaption></figure>
         </article>
         <article class="ch" data-year="1976" data-sub-it="Direttore tecnico A.N.A.M." data-sub-en="A.N.A.M. technical director"><div class="y">1976</div><h3><span data-it>Direttore tecnico A.N.A.M.</span><span data-en>A.N.A.M. technical director</span></h3><p><span data-it>Guida tecnica nazionale dell'Accademia, giurato italiano ai Mondiali di New York. Riceve l'Ambrogino d'Oro del Comune di Milano.</span><span data-en>National technical lead of the Academy, Italy's juror at the New York World Championships. He receives Milan's Ambrogino d'Oro.</span></p>
           <div class="pair">
