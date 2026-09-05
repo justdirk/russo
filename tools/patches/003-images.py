@@ -15,11 +15,20 @@ INBOX = os.path.join(ROOT, 'tools', 'inbox')
 IMG = os.path.join(ROOT, 'img')
 os.makedirs(IMG, exist_ok=True)
 
-try:
-    from PIL import Image
-except ImportError:
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--quiet', 'pillow'])
-    from PIL import Image
+def get_pil():
+    try:
+        from PIL import Image
+    except ImportError:
+        subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--quiet', 'pillow'])
+        import importlib, site
+        importlib.invalidate_caches()
+        try:
+            site.addsitedir(site.getusersitepackages())
+        except Exception:
+            pass
+        importlib.invalidate_caches()
+        from PIL import Image
+    return Image
 
 # 1. inbox -> img/
 ok = True
@@ -62,6 +71,7 @@ try:
     req = urllib.request.Request(COVER, headers={'User-Agent': 'Mozilla/5.0 (site build; +https://github.com/justdirk/russo)'})
     with urllib.request.urlopen(req, timeout=60) as r:
         data = r.read()
+    Image = get_pil()
     cover = Image.open(io.BytesIO(data)).convert('RGB')
     if cover.width < 500 or cover.height < cover.width:
         raise ValueError('unexpected cover size %s' % (cover.size,))
